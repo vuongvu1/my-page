@@ -5,7 +5,7 @@ import { mediaQueries } from "globalStyles";
 const SC = {
   Wrapper: styled.nav(
     ({ theme }) => css`
-      background-color: ${theme.color.primary};
+      background-color: ${theme.palette.primary.main};
       padding: ${theme.spacing.sm};
     `
   ),
@@ -19,7 +19,7 @@ const SC = {
       align-items: center;
 
       ${mediaQueries("sm")`
-        max-width: ${theme.breakpoints.lg};
+        max-width: ${theme.breakpoint.lg};
       `}
     `
   ),
@@ -29,7 +29,7 @@ const SC = {
 
       a {
         text-decoration: none;
-        color: ${theme.color.light};
+        color: ${theme.palette.common.light};
         font-weight: ${theme.fontWeight.md};
       }
     `

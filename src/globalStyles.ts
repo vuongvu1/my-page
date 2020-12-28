@@ -1,17 +1,26 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, DefaultTheme } from "styled-components";
 
-type ThemeType = { [key: string]: { [key: string]: string | number } };
+export type ThemeType = { [key: string]: { [key: string]: string | number } };
 
-export const theme: ThemeType = {
-  color: {
-    primary: "#1B242E",
-    secondary: "#92C1F7",
-    neutral: "#475E78",
-    light: "#EFEFEF",
-    dark: "#707070",
-    boxShadowColor: "rgba(165, 165, 168, 0.2)",
+export const theme: DefaultTheme = {
+  palette: {
+    common: {
+      black: "#222831",
+      white: "#ffffff",
+      dark: "#707070",
+      light: "#EFEFEF",
+      boxShadowColor: "rgba(165, 165, 168, 0.2)",
+    },
+    primary: {
+      main: "#1B242E",
+      contrastText: "#ffffff",
+    },
+    secondary: {
+      main: "#475E78",
+      contrastText: "#ffffff",
+    },
   },
-  breakpoints: {
+  breakpoint: {
     sm: "480px",
     md: "768px",
     lg: "1024px",
@@ -31,6 +40,7 @@ export const theme: ThemeType = {
     md: 700,
     lg: 900,
   },
+  borderRadius: "4px",
 };
 
 export const mediaQueries = (key: "sm" | "md" | "lg") => {
@@ -38,7 +48,7 @@ export const mediaQueries = (key: "sm" | "md" | "lg") => {
     const styles = style
       .map((str, index) => `${str}${values[index] || ""}`)
       .join("");
-    return `@media (min-width: ${theme.breakpoints[key]}) { ${styles} }`;
+    return `@media (min-width: ${theme.breakpoint[key]}) { ${styles} }`;
   };
 };
 
