@@ -3,16 +3,22 @@ import SC from "./styles";
 
 const Header = () => {
   return (
-    <SC.Nav>
-      <ul>
-        <li>
+    <SC.Wrapper>
+      <SC.Items>
+        <SC.Item>
           <Link to="/">Home</Link>
-        </li>
-        <li>
+        </SC.Item>
+        <SC.Item>
           <Link to="/about">About</Link>
-        </li>
-      </ul>
-    </SC.Nav>
+        </SC.Item>
+        <SC.Item>
+          <Link to="/projects">Projects</Link>
+        </SC.Item>
+        <SC.Item>
+          <Link to="/contact">Contact</Link>
+        </SC.Item>
+      </SC.Items>
+    </SC.Wrapper>
   );
 };
 
