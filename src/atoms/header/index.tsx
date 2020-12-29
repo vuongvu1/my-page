@@ -1,30 +1,37 @@
 import { Link } from "react-router-dom";
+import { useTheme } from "styled-components";
 import { useScreen } from "utils/hooks";
 import { Option as OptionIcon } from "icons";
 import SC from "./styles";
 
 const Header = () => {
-  const { isSmall } = useScreen();
+  const theme = useTheme();
+  const { isSmall: isScreenSmall } = useScreen();
 
   return (
     <SC.Wrapper>
-      {isSmall && <OptionIcon fill="#FFFFFF" />}
-      {!isSmall && (
-        <SC.Items>
+      <SC.Items>
+        {isScreenSmall ? (
           <SC.Item>
-            <Link to="/">Home</Link>
+            <OptionIcon fill={theme.palette.primary.contrastText} />
           </SC.Item>
-          <SC.Item>
-            <Link to="/about">About</Link>
-          </SC.Item>
-          <SC.Item>
-            <Link to="/projects">Projects</Link>
-          </SC.Item>
-          <SC.Item>
-            <Link to="/contact">Contact</Link>
-          </SC.Item>
-        </SC.Items>
-      )}
+        ) : (
+          <>
+            <SC.Item>
+              <Link to="/">Home</Link>
+            </SC.Item>
+            <SC.Item>
+              <Link to="/about">About</Link>
+            </SC.Item>
+            <SC.Item>
+              <Link to="/projects">Projects</Link>
+            </SC.Item>
+            <SC.Item>
+              <Link to="/contact">Contact</Link>
+            </SC.Item>
+          </>
+        )}
+      </SC.Items>
     </SC.Wrapper>
   );
 };

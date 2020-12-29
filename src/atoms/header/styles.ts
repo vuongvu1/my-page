@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-
 import { mediaQueries } from "globalStyles";
 
 const SC = {
@@ -15,22 +14,29 @@ const SC = {
       padding: 0;
       list-style-type: none;
       display: flex;
-      justify-content: space-around;
-      align-items: center;
+      align-items: left;
 
       ${mediaQueries("sm")`
         max-width: ${theme.breakpoint.lg};
+        align-items: center;
+        justify-content: space-around;
       `}
     `
   ),
   Item: styled.li(
     ({ theme }) => css`
       padding-left: ${theme.spacing.md};
+      cursor: pointer;
 
       a {
         text-decoration: none;
-        color: ${theme.palette.common.light};
+        color: ${theme.palette.primary.contrastText};
         font-weight: ${theme.fontWeight.md};
+        transition: color 0.3s;
+
+        &:hover {
+          color: ${theme.palette.common.hover};
+        }
       }
     `
   ),

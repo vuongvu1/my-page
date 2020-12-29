@@ -10,14 +10,15 @@ export const theme: DefaultTheme = {
       dark: "#707070",
       light: "#EFEFEF",
       boxShadowColor: "rgba(165, 165, 168, 0.2)",
+      hover: "#F64C72",
     },
     primary: {
       main: "#1B242E",
-      contrastText: "#ffffff",
+      contrastText: "#EFEFEF",
     },
     secondary: {
       main: "#475E78",
-      contrastText: "#ffffff",
+      contrastText: "#EFEFEF",
     },
   },
   breakpoint: {
