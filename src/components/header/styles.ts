@@ -6,6 +6,8 @@ const SC = {
     ({ theme }) => css`
       background-color: ${theme.palette.primary.main};
       padding: ${theme.spacing.sm};
+      position: sticky;
+      top: 0;
     `
   ),
   Items: styled.ul(

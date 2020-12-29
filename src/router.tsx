@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { Home, About, Error } from "pages";
-import { Header } from "atoms";
+import { Header } from "components";
 
 const App = () => {
   return (
