@@ -27,9 +27,9 @@ export const theme: DefaultTheme = {
     lg: "1024px",
   },
   spacing: {
-    sm: "6px",
-    md: "12px",
-    lg: "18px",
+    sm: "8px",
+    md: "16px",
+    lg: "24px",
   },
   fontSize: {
     sm: "14px",
@@ -41,7 +41,7 @@ export const theme: DefaultTheme = {
     md: 700,
     lg: 900,
   },
-  borderRadius: "4px",
+  borderRadius: "8px",
 };
 
 export const mediaQueries = (key: "sm" | "md" | "lg") => {
@@ -56,6 +56,7 @@ export const mediaQueries = (key: "sm" | "md" | "lg") => {
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
+    background-color: ${theme.palette.primary.main};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;

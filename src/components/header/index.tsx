@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "styled-components";
 import { useScreen } from "utils/hooks";
-import { Option as OptionIcon } from "icons";
+import { Option as OptionIcon } from "assets/icons";
 import SC from "./styles";
 
 const Header = () => {
