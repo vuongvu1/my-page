@@ -5,7 +5,7 @@ const SC = {
   Wrapper: styled.div(
     ({ theme }) => css`
       min-height: 90vh;
-      color: ${theme.palette.primary.contrastText};
+      color: ${theme.palette.primary.main};
       display: grid;
 
       ${mediaQueries("md")`
@@ -20,7 +20,6 @@ const SC = {
       padding: ${theme.spacing.lg};
     `
   ),
-  Info: styled.div(({ theme }) => css``),
 };
 
 export default SC;

@@ -1,10 +1,10 @@
-import { Greeting } from "components";
+import { Greeting, About } from "components";
 
 const Home = () => {
   return (
     <>
       <Greeting />
-      <Greeting />
+      <About />
     </>
   );
 };

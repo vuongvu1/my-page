@@ -32,9 +32,9 @@ export const theme: DefaultTheme = {
     lg: "24px",
   },
   fontSize: {
-    sm: "14px",
-    md: "16px",
-    lg: "32px",
+    sm: "1rem",
+    md: "1.8rem",
+    lg: "2.5rem",
   },
   fontWeight: {
     sm: 400,
@@ -57,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     background-color: ${theme.palette.primary.main};
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'UbuntuMonoRegular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;

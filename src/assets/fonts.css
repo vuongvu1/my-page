@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "UbuntuMonoRegular";
+  font-display: swap;
+  src: url("./fonts/UbuntuMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "UbuntuMonoBold";
+  font-display: swap;
+  src: url("./fonts/UbuntuMono-Bold.ttf") format("truetype");
+}
