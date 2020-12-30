@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "styled-components";
+import { Text } from "atoms";
 import { useScreen } from "utils/hooks";
 import { Option as OptionIcon } from "assets/icons";
 import SC from "./styles";
@@ -18,16 +19,24 @@ const Header = () => {
         ) : (
           <>
             <SC.Item>
-              <Link to="/">Home</Link>
+              <Link to="/">
+                <Text>Home</Text>
+              </Link>
             </SC.Item>
             <SC.Item>
-              <Link to="/about">About</Link>
+              <Link to="/about">
+                <Text>About</Text>
+              </Link>
             </SC.Item>
             <SC.Item>
-              <Link to="/projects">Projects</Link>
+              <Link to="/projects">
+                <Text>Projects</Text>
+              </Link>
             </SC.Item>
             <SC.Item>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">
+                <Text>Contact</Text>
+              </Link>
             </SC.Item>
           </>
         )}
