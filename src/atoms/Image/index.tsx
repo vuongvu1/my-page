@@ -4,13 +4,14 @@ import SC from "./styles";
 type Props = {
   src: string;
   alt?: string;
+  type?: 1 | 2;
 };
 
-const Image: FC<Props> = ({ src, alt }) => {
+const Image: FC<Props> = ({ src, alt, type = 1 }) => {
   return (
     <SC.Wrapper>
-      <SC.Border>
-        <SC.Image src={src} alt={alt || "image"} />
+      <SC.Border type={type}>
+        <img src={src} alt={alt || "image"} />
       </SC.Border>
     </SC.Wrapper>
   );

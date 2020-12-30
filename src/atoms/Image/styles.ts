@@ -1,36 +1,65 @@
 import styled, { css } from "styled-components";
 import { mediaQueries } from "globalStyles";
 
-const SC = {
-  Wrapper: styled.div(
-    ({ theme }) => css`
-      padding: ${theme.spacing.lg};
-      display: grid;
-      place-items: center;
-    `
-  ),
-  Border: styled.div(
-    ({ theme }) => css`
-      max-width: 340px;
-      border-radius: ${theme.borderRadius};
+type BorderType = {
+  type?: 1 | 2;
+};
 
-      ${mediaQueries("md")`
-        border: 2px solid ${theme.palette.common.hover};
-        transform: translate(${theme.spacing.sm}, ${theme.spacing.sm});
-      `}
-    `
-  ),
-  Image: styled.img(
-    ({ theme }) => css`
+const Wrapper = styled.div(
+  ({ theme }) => css`
+    padding: ${theme.spacing.lg};
+    display: grid;
+    place-items: center;
+
+    ${mediaQueries("md")`
+      &:hover {
+        ${Border} {
+          transform: unset;
+          border-width: 0;
+          > img {
+            transform: unset;
+          }
+        }
+      }
+    `}
+  `
+);
+
+const Border = styled.div<BorderType>(
+  ({ theme, type }) => css`
+    max-width: 340px;
+    border-radius: ${theme.borderRadius};
+    transition: transform 0.3s, border-width 0.3s;
+    > img {
       width: 100%;
-      max-width: 340px;
       border-radius: ${theme.borderRadius};
+      transition: transform 0.3s;
+    }
 
-      ${mediaQueries("md")`
+    ${mediaQueries("md")`
+      border: 4px solid ${theme.palette.common.hover};
+      transform: translate(${theme.spacing.sm}, ${theme.spacing.sm});
+      > img {
         transform: translate(-${theme.spacing.lg}, -${theme.spacing.lg});
+      }
+    `}
+
+    ${type === 2 &&
+    css`
+      ${mediaQueries("md")`
+        border-color: ${theme.palette.common.black};
+        transform: translate(${theme.spacing.sm}, ${theme.spacing.sm});
+        > img {
+          transform: translate(${theme.spacing.lg}, -${theme.spacing.lg});
+        }
       `}
-    `
-  ),
+    `}
+  `
+);
+
+const SC = {
+  Wrapper,
+  Border,
 };
 
 export default SC;
