@@ -48,7 +48,7 @@ const Border = styled.div<BorderType>(
     css`
       ${mediaQueries("md")`
         border-color: ${theme.palette.common.black};
-        transform: translate(${theme.spacing.sm}, ${theme.spacing.sm});
+        transform: translate(-${theme.spacing.sm}, ${theme.spacing.sm});
         > img {
           transform: translate(${theme.spacing.lg}, -${theme.spacing.lg});
         }

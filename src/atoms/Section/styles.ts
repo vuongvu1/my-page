@@ -7,7 +7,7 @@ type WrapperProps = {
 const SC = {
   Wrapper: styled.section<WrapperProps>(
     ({ theme, bgColor }) => css`
-      background-color: ${bgColor || theme.palette.secondary.main};
+      background-color: ${bgColor || theme.palette.primary.main};
       padding: ${theme.spacing.lg};
       display: flex;
       justify-content: center;

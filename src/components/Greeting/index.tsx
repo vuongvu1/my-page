@@ -4,10 +4,10 @@ import avatar from "assets/images/cat.webp";
 import SC from "./styles";
 
 const Greeting = () => {
-  const theme = useTheme();
+  const { palette } = useTheme();
 
   return (
-    <Section bgColor={theme.palette.primary.main}>
+    <Section bgColor={palette.primary.main}>
       <SC.Wrapper>
         <SC.Column>
           <SC.Info>

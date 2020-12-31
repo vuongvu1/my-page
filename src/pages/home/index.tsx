@@ -1,10 +1,11 @@
-import { Greeting, About } from "components";
+import { Greeting, About, Projects } from "components";
 
 const Home = () => {
   return (
     <>
       <Greeting />
       <About />
+      <Projects />
     </>
   );
 };
