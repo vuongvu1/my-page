@@ -1,5 +1,6 @@
 import { useTheme } from "styled-components";
-import { Section, Text } from "atoms";
+import { Section, Text, Card } from "atoms";
+import cat from "assets/images/cat.webp";
 import SC from "./styles";
 
 const Projects = () => {
@@ -12,21 +13,26 @@ const Projects = () => {
           Projects
         </Text>
         <SC.Body>
-          <div
-            style={{ height: 300, width: "100%", border: "1px solid red" }}
-          ></div>
-          <div
-            style={{ height: 300, width: "100%", border: "1px solid red" }}
-          ></div>
-          <div
-            style={{ height: 300, width: "100%", border: "1px solid red" }}
-          ></div>
-          <div
-            style={{ height: 300, width: "100%", border: "1px solid red" }}
-          ></div>
-          <div
-            style={{ height: 300, width: "100%", border: "1px solid red" }}
-          ></div>
+          <Card
+            imgSrc={cat}
+            title="Project Name"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat tortor velit, vitae commodo ex malesuada et. "
+          />
+          <Card
+            imgSrc={cat}
+            title="Project Name"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+          />
+          <Card
+            imgSrc={cat}
+            title="Project Name"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat tortor velit, vitae commodo ex malesuada et. "
+          />
+          <Card
+            imgSrc={cat}
+            title="Project Name"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat tortor velit, vitae commodo ex malesuada et. "
+          />
         </SC.Body>
       </SC.Wrapper>
     </Section>

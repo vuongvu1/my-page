@@ -18,6 +18,7 @@ const getStyles = ({ theme, type, color = "unset" }: getFontSizeType) => {
         color: ${color};
         font-size: ${theme.fontSize.lg};
         font-family: "UbuntuMonoBold";
+        margin: ${theme.spacing.md} 0;
         ${mediaQueries("md")`
           font-size: ${theme.fontSize.xlg};
         `}
@@ -27,8 +28,19 @@ const getStyles = ({ theme, type, color = "unset" }: getFontSizeType) => {
         color: ${color};
         font-size: ${theme.fontSize.md};
         font-family: "UbuntuMonoBold";
+        margin: ${theme.spacing.md} 0;
         ${mediaQueries("md")`
           font-size: ${theme.fontSize.lg};
+        `}
+      `;
+    case "h3":
+      return css`
+        color: ${color};
+        font-size: ${theme.fontSize.sm};
+        font-family: "UbuntuMonoBold";
+        margin: ${theme.spacing.sm} 0;
+        ${mediaQueries("md")`
+          font-size: ${theme.fontSize.md};
         `}
       `;
     default:
@@ -36,6 +48,7 @@ const getStyles = ({ theme, type, color = "unset" }: getFontSizeType) => {
         color: ${color};
         font-size: ${theme.fontSize.sm};
         font-family: "UbuntuMonoRegular";
+        margin: ${theme.spacing.sm} 0;
         ${mediaQueries("md")`
           font-size: ${theme.fontSize.md};
         `}

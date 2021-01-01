@@ -42,5 +42,6 @@ declare module "styled-components" {
       md: number;
       lg: number;
     };
+    transitionTime: string;
   }
 }

@@ -18,6 +18,10 @@ const SC = {
       place-items: center;
       width: 100%;
 
+      > * {
+        height: 100%;
+      }
+
       ${mediaQueries("sm")`
         grid-template-columns: repeat(2, 1fr);
       `}

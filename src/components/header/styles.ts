@@ -36,7 +36,7 @@ const SC = {
         text-decoration: none;
         color: ${theme.palette.primary.contrastText};
         font-weight: ${theme.fontWeight.md};
-        transition: color 0.3s;
+        transition: color ${theme.transitionTime};
 
         &:hover {
           color: ${theme.palette.common.hover};

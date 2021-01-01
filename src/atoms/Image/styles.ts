@@ -29,11 +29,12 @@ const Border = styled.div<BorderType>(
   ({ theme, type }) => css`
     max-width: 340px;
     border-radius: ${theme.borderRadius};
-    transition: transform 0.3s, border-width 0.3s;
+    transition: transform ${theme.transitionTime},
+      border-width ${theme.transitionTime};
     > img {
       width: 100%;
       border-radius: ${theme.borderRadius};
-      transition: transform 0.3s;
+      transition: transform ${theme.transitionTime};
     }
 
     ${mediaQueries("md")`

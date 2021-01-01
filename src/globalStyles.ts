@@ -9,7 +9,7 @@ export const theme: DefaultTheme = {
       white: "#ffffff",
       dark: "#707070",
       light: "#EFEFEF",
-      boxShadowColor: "rgba(165, 165, 168, 0.2)",
+      boxShadowColor: "-4px 4px 8px 4px rgba(255,255,255,0.4)",
       hover: "#F64C72",
     },
     primary: {
@@ -43,6 +43,7 @@ export const theme: DefaultTheme = {
     lg: 900,
   },
   borderRadius: "8px",
+  transitionTime: "300ms",
 };
 
 export const mediaQueries = (key: "sm" | "md" | "lg") => {
