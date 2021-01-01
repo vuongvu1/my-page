@@ -35,6 +35,7 @@ declare module "styled-components" {
       sm: string;
       md: string;
       lg: string;
+      xlg: string;
     };
     fontWeight: {
       sm: number;

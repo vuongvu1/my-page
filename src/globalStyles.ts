@@ -33,8 +33,9 @@ export const theme: DefaultTheme = {
   },
   fontSize: {
     sm: "1rem",
-    md: "1.8rem",
-    lg: "2.5rem",
+    md: "1.4rem",
+    lg: "1.8rem",
+    xlg: "2.4rem",
   },
   fontWeight: {
     sm: 400,
