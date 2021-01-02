@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "styled-components";
 import { Text } from "atoms";
-import { useScreen } from "utils/hooks";
+import { useScreen, useScroll } from "utils/hooks";
 import { Option as OptionIcon } from "assets/icons";
 import SC from "./styles";
 
 const Header = () => {
   const theme = useTheme();
   const { isSmall: isScreenSmall } = useScreen();
+  const { scrollDirection } = useScroll();
 
   return (
-    <SC.Wrapper>
+    <SC.Wrapper hide={scrollDirection === "down"}>
       <SC.Items>
         {isScreenSmall ? (
           <SC.Item>

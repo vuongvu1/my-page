@@ -1,15 +1,23 @@
 import styled, { css } from "styled-components";
 import { mediaQueries } from "globalStyles";
 
+type WrapperProps = {
+  hide?: boolean;
+};
+
 const SC = {
-  Wrapper: styled.nav(
-    ({ theme }) => css`
+  Wrapper: styled.nav<WrapperProps>(
+    ({ theme, hide }) => css`
       background-color: ${theme.palette.primary.main};
       padding: ${theme.spacing.sm};
       z-index: 2;
       position: sticky;
       top: 0;
-      opacity: 0.98;
+      transition: top ${theme.transitionTime};
+      ${hide &&
+      css`
+        top: -80px;
+      `}
     `
   ),
   Items: styled.ul(
