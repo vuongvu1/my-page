@@ -9,7 +9,7 @@ export const theme: DefaultTheme = {
       white: "#ffffff",
       dark: "#707070",
       light: "#EFEFEF",
-      boxShadowColor: "-4px 4px 8px 4px rgba(255,255,255,0.4)",
+      boxShadowColor: "2px 2px 5px #707070",
       hover: "#F64C72",
     },
     primary: {
