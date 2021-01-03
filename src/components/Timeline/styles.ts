@@ -12,13 +12,9 @@ const SC = {
   ),
   Body: styled.div(
     ({ theme }) => css`
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-
-      > * {
-        margin: ${theme.spacing.sm};
-      }
+      display: grid;
+      place-items: center;
+      width: 60%;
     `
   ),
 };
