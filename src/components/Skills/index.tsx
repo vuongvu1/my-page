@@ -6,8 +6,8 @@ import SC from "./styles";
 const Languages = [{ logo: cat, name: "JavaScript" }];
 const Technologies = [
   { logo: cat, name: "React" },
-  { logo: cat, name: "Redux" },
-  { logo: cat, name: "Nodes" },
+  { logo: cat, name: "React Native" },
+  { logo: cat, name: "Nodejs" },
 ];
 const Tools = [
   { logo: cat, name: "VSCode" },

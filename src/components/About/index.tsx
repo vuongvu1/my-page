@@ -23,17 +23,12 @@ const About = () => {
             </Text>
             <Text type="body" color={palette.primary.main}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              feugiat tortor velit, vitae commodo ex malesuada et. Morbi
-              bibendum hendrerit lectus, sed molestie tellus porttitor et. Nulla
-              cursus arcu purus, id lobortis est ornare et.
+              feugiat tortor velit, vitae commodo ex malesuada et.
             </Text>
             <Text type="body" color={palette.primary.main}>
               Phasellus rhoncus, nisi et finibus porta, massa nisi luctus nulla,
               at blandit quam ex sit amet ante. Donec pulvinar cursus magna vel
-              lacinia. Ut feugiat nec justo nec eleifend. Aenean nulla odio,
-              facilisis quis nisl a, sollicitudin cursus nibh. Quisque ac
-              sagittis justo. Donec tempor ex at nisi porta sodales. Nullam
-              luctus nulla et elementum tincidunt.
+              lacinia. Ut feugiat nec justo nec eleifend.
             </Text>
           </SC.Info>
         </SC.Column>

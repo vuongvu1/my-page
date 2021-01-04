@@ -11,8 +11,12 @@ const Greeting = () => {
       <SC.Wrapper>
         <SC.Column>
           <SC.Info>
-            <Text type="h1">Hi, I'm Vuong Vu</Text>
-            <Text type="h2">Frontend Web Developer</Text>
+            <Text type="h1" color={palette.primary.contrastText}>
+              Hi, I'm Vuong Vu
+            </Text>
+            <Text type="h2" color={palette.primary.contrastText}>
+              Frontend Web Developer
+            </Text>
           </SC.Info>
         </SC.Column>
         <SC.Column>

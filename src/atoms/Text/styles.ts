@@ -11,11 +11,11 @@ type getFontSizeType = WrapperProps & {
   theme: DefaultTheme;
 };
 
-const getStyles = ({ theme, type, color = "unset" }: getFontSizeType) => {
+const getStyles = ({ theme, type, color }: getFontSizeType) => {
   switch (type) {
     case "h1":
       return css`
-        color: ${color};
+        color: ${color || theme.palette.primary.main};
         font-size: ${theme.fontSize.lg};
         font-family: "UbuntuMonoBold";
         margin: ${theme.spacing.md} 0;
@@ -25,7 +25,7 @@ const getStyles = ({ theme, type, color = "unset" }: getFontSizeType) => {
       `;
     case "h2":
       return css`
-        color: ${color};
+        color: ${color || theme.palette.primary.main};
         font-size: ${theme.fontSize.md};
         font-family: "UbuntuMonoBold";
         margin: ${theme.spacing.md} 0;
@@ -35,7 +35,7 @@ const getStyles = ({ theme, type, color = "unset" }: getFontSizeType) => {
       `;
     case "h3":
       return css`
-        color: ${color};
+        color: ${color || theme.palette.primary.main};
         font-size: ${theme.fontSize.sm};
         font-family: "UbuntuMonoBold";
         margin: ${theme.spacing.sm} 0;
@@ -45,7 +45,7 @@ const getStyles = ({ theme, type, color = "unset" }: getFontSizeType) => {
       `;
     default:
       return css`
-        color: ${color};
+        color: ${color || theme.palette.primary.main};
         font-size: ${theme.fontSize.sm};
         font-family: "UbuntuMonoRegular";
         margin: ${theme.spacing.sm} 0;

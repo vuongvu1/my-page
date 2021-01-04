@@ -6,7 +6,7 @@ import { Option as OptionIcon } from "assets/icons";
 import SC from "./styles";
 
 const Header = () => {
-  const theme = useTheme();
+  const { palette } = useTheme();
   const { isSmall: isScreenSmall } = useScreen();
   const { scrollDirection } = useScroll();
 
@@ -15,28 +15,28 @@ const Header = () => {
       <SC.Items>
         {isScreenSmall ? (
           <SC.Item>
-            <OptionIcon fill={theme.palette.primary.contrastText} />
+            <OptionIcon fill={palette.primary.contrastText} />
           </SC.Item>
         ) : (
           <>
             <SC.Item>
               <Link to="/">
-                <Text>Home</Text>
+                <Text color={palette.primary.contrastText}>Home</Text>
               </Link>
             </SC.Item>
             <SC.Item>
               <Link to="/about">
-                <Text>About</Text>
+                <Text color={palette.primary.contrastText}>About</Text>
               </Link>
             </SC.Item>
             <SC.Item>
               <Link to="/projects">
-                <Text>Projects</Text>
+                <Text color={palette.primary.contrastText}>Projects</Text>
               </Link>
             </SC.Item>
             <SC.Item>
               <Link to="/contact">
-                <Text>Contact</Text>
+                <Text color={palette.primary.contrastText}>Contact</Text>
               </Link>
             </SC.Item>
           </>

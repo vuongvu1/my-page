@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { mediaQueries } from "globalStyles";
 
 const SC = {
   Wrapper: styled.div(
@@ -14,7 +15,12 @@ const SC = {
     ({ theme }) => css`
       display: grid;
       place-items: center;
-      width: 60%;
+      padding: ${theme.spacing.lg};
+
+      ${mediaQueries("sm")`
+        width: 60%;
+        padding: 0;
+      `}
     `
   ),
 };

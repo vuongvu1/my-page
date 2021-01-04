@@ -13,7 +13,7 @@ export const theme: DefaultTheme = {
       hover: "#F64C72",
     },
     primary: {
-      main: "#1B242E",
+      main: "#014421",
       contrastText: "#EFEFEF",
     },
     secondary: {

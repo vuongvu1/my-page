@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { mediaQueries } from "globalStyles";
 
 type WrapperProps = {};
 
@@ -21,6 +22,12 @@ const SC = {
   Body: styled.div(
     () => css`
       display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      ${mediaQueries("sm")`
+        flex-direction: row;
+      `}
     `
   ),
   Item: styled.div(
