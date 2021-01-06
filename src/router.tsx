@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { Home, About, Error } from "pages";
-import { Header } from "components";
+import { Header, Footer } from "components";
 
 const App = () => {
   return (
@@ -19,6 +19,7 @@ const App = () => {
             <Error />
           </Route>
         </Switch>
+        <Footer />
       </>
     </Router>
   );
