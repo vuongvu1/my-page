@@ -38,7 +38,7 @@ const Border = styled.div<BorderType>(
     }
 
     ${mediaQueries("md")`
-      border: 4px solid ${theme.palette.common.hover};
+      border: 4px solid ${theme.palette.common.light};
       transform: translate(${theme.spacing.sm}, ${theme.spacing.sm});
       > img {
         transform: translate(-${theme.spacing.lg}, -${theme.spacing.lg});

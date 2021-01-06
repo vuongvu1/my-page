@@ -1,13 +1,14 @@
 import { useTheme } from "styled-components";
 import { Section, Image, Text } from "atoms";
 import avatar from "assets/images/cat.webp";
+import BackgroundImage from "assets/images/background.webp";
 import SC from "./styles";
 
 const Greeting = () => {
   const { palette } = useTheme();
 
   return (
-    <Section bgColor={palette.primary.main}>
+    <Section bgImage={BackgroundImage}>
       <SC.Wrapper>
         <SC.Column>
           <SC.Info>

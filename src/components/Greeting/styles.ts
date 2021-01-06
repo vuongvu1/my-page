@@ -20,7 +20,11 @@ const SC = {
       padding: ${theme.spacing.lg};
     `
   ),
-  Info: styled.div(({ theme }) => css``),
+  Info: styled.div(
+    ({ theme }) => css`
+      text-shadow: 2px 2px ${theme.palette.primary.main};
+    `
+  ),
 };
 
 export default SC;
