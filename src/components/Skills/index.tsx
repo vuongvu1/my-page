@@ -18,7 +18,7 @@ const Skills = () => {
   const { palette } = useTheme();
 
   return (
-    <Section bgColor={palette.common.light}>
+    <Section bgColor={palette.common.light} id="skills-section">
       <SC.Wrapper>
         <Text type="h1" color={palette.primary.main}>
           Skills

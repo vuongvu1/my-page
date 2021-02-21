@@ -28,7 +28,7 @@ const Timeline = () => {
   const { palette } = useTheme();
 
   return (
-    <Section>
+    <Section id="timeline-section">
       <SC.Wrapper>
         <Text type="h1" color={palette.primary.contrastText}>
           Timeline

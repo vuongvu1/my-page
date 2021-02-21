@@ -8,7 +8,7 @@ const About = () => {
   const { palette } = useTheme();
 
   return (
-    <Section bgColor={palette.common.light}>
+    <Section bgColor={palette.common.light} id="about-section">
       <SC.Wrapper>
         <SC.Column>
           <Image src={avatar} alt="avatar" type={2} />

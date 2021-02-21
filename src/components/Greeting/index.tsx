@@ -1,6 +1,5 @@
 import { useTheme } from "styled-components";
-import { Section, Image, Text } from "atoms";
-import avatar from "assets/images/cat.webp";
+import { Section, Text } from "atoms";
 import BackgroundImage from "assets/images/background.webp";
 import SC from "./styles";
 
@@ -16,12 +15,15 @@ const Greeting = () => {
               Hi, I'm Vuong Vu
             </Text>
             <Text type="h2" color={palette.primary.contrastText}>
-              Frontend Web Developer
+              Frontend Developer
+            </Text>
+            <Text color={palette.primary.contrastText}>
+              Want to know more{" "}
+              <SC.Link href="/#about-section">about me</SC.Link>? Checkout my{" "}
+              <SC.Link href="/#skills-section">skills</SC.Link> and{" "}
+              <SC.Link href="/#projects-section">projects</SC.Link>
             </Text>
           </SC.Info>
-        </SC.Column>
-        <SC.Column>
-          <Image src={avatar} alt="avatar" />
         </SC.Column>
       </SC.Wrapper>
     </Section>

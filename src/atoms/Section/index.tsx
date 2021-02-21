@@ -2,14 +2,15 @@ import { FC, ReactNode } from "react";
 import SC from "./styles";
 
 type Props = {
+  id?: string;
   children: ReactNode;
   bgColor?: string;
   bgImage?: string;
 };
 
-const Section: FC<Props> = ({ children, bgColor, bgImage }) => {
+const Section: FC<Props> = ({ children, bgColor, bgImage, id }) => {
   return (
-    <SC.Wrapper bgImage={bgImage} bgColor={bgColor}>
+    <SC.Wrapper id={id} bgImage={bgImage} bgColor={bgColor}>
       <SC.Content>{children}</SC.Content>
     </SC.Wrapper>
   );

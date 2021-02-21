@@ -7,7 +7,7 @@ const Projects = () => {
   const { palette } = useTheme();
 
   return (
-    <Section>
+    <Section id="projects-section">
       <SC.Wrapper>
         <Text type="h1" color={palette.primary.contrastText}>
           Projects

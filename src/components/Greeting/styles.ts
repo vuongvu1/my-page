@@ -22,7 +22,19 @@ const SC = {
   ),
   Info: styled.div(
     ({ theme }) => css`
+      padding: ${theme.spacing.md};
+      background: rgba(76, 175, 80, 0.4);
       text-shadow: 2px 2px ${theme.palette.primary.main};
+      border-radius: ${theme.borderRadius};
+
+      ${mediaQueries("md")`
+        margin-left: ${theme.spacing.lg};
+      `}
+    `
+  ),
+  Link: styled.a(
+    ({ theme }) => css`
+      color: ${theme.palette.primary.contrastText};
     `
   ),
 };

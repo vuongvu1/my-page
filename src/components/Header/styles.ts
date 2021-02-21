@@ -22,14 +22,14 @@ const SC = {
   ),
   Items: styled.ul(
     ({ theme }) => css`
-      margin: ${theme.spacing.md} auto;
+      margin: ${theme.spacing.sm} auto;
       padding: 0;
       list-style-type: none;
       display: flex;
       align-items: left;
 
       ${mediaQueries("sm")`
-        max-width: ${theme.breakpoint.lg};
+        max-width: ${theme.breakpoint.md};
         align-items: center;
         justify-content: space-around;
       `}
