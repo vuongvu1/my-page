@@ -1,4 +1,4 @@
-import { Greeting, About, Projects, Skills, Timeline } from "components";
+import { Greeting, About, Projects, Skills, Timeline } from "./components";
 
 const Home = () => {
   return (
