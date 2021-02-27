@@ -30,8 +30,8 @@ const Header = () => {
               </Link>
             </SC.Item>
             <SC.Item>
-              <Link to="/projects">
-                <Text color={palette.primary.contrastText}>Projects</Text>
+              <Link to="/playground">
+                <Text color={palette.primary.contrastText}>Playground</Text>
               </Link>
             </SC.Item>
             <SC.Item>

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { Home, About, Error } from "pages";
+import { Home, About, Error, Playground } from "pages";
 import { Header, Footer } from "components";
 
 const App = () => {
@@ -14,6 +14,9 @@ const App = () => {
           </Route>
           <Route path="/about" exact>
             <About />
+          </Route>
+          <Route path="/playground" exact>
+            <Playground />
           </Route>
           <Route path="*">
             <Error />
