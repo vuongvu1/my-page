@@ -53,7 +53,7 @@ const DigitalClock = () => {
       <SC.Title>Digital Clock</SC.Title>
       <SC.Clock>
         <SC.Seperator>Date:&nbsp;</SC.Seperator>
-        <Block total={3} current={num[6]} />
+        <Block total={4} current={num[6]} />
         <Block total={10} current={num[7]} />
         <SC.Seperator>&nbsp;</SC.Seperator>
         <Block total={12} current={parseInt(`${num[8]}${num[9]}`)} isMonth />
