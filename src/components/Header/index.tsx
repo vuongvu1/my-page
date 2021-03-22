@@ -25,9 +25,11 @@ const Header = () => {
               </Link>
             </SC.Item>
             <SC.Item>
-              <Link to="/about">
-                <Text color={palette.primary.contrastText}>About</Text>
-              </Link>
+              <a href="https://til.vuongvu.me/">
+                <Text color={palette.primary.contrastText}>
+                  Today I Learned
+                </Text>
+              </a>
             </SC.Item>
             <SC.Item>
               <Link to="/playground">
