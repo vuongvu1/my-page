@@ -14,7 +14,7 @@ const Greeting = () => {
             <Text type="h1" color={palette.primary.contrastText}>
               Hi, I'm Vuong Vu
             </Text>
-            <Text type="h2" color={palette.primary.contrastText}>
+            <Text type="h3" color={palette.primary.contrastText}>
               Frontend Developer
             </Text>
             <Text color={palette.primary.contrastText}>
