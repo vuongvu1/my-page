@@ -44,23 +44,25 @@ export const SideBarStyles = {
       position: absolute;
       left: 0;
       top: 50%;
-      transform: translate(-70%, -50%);
-      width: 140px;
+      transform: translate(-90%, -50%);
+      min-width: 240px;
       z-index: 1;
       transition: transform 0.3s;
 
       &:hover {
-        transform: translate(0, -50%);
+        transform: translate(-20%, -50%);
       }
     `
   ),
   Item: styled.div<{ isActive: boolean }>(
     ({ theme, isActive }) => css`
-      padding: ${theme.spacing.sm};
+      padding: ${theme.spacing.sm} ${theme.spacing.lg};
+      padding-left: 80px;
       transition: transform 0.3s, background-color 0.3s;
       border: 1px solid ${theme.palette.primary.main};
       background-color: ${theme.palette.common.white};
       cursor: pointer;
+      font-weight: bold;
 
       ${isActive &&
       css`
@@ -69,7 +71,7 @@ export const SideBarStyles = {
       `}
 
       &:hover {
-        transform: translate(10%, 0);
+        transform: translate(20%, 0);
       }
     `
   ),
