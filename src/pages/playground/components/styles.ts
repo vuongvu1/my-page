@@ -1,24 +1,6 @@
 import styled, { css } from "styled-components";
 
-const SC = {
-  Wrapper: styled.div(
-    ({ theme }) => css`
-      background-color: ${theme.palette.common.white};
-      height: 85vh;
-      display: grid;
-      place-items: center;
-      position: relative;
-    `
-  ),
-  Title: styled.div(
-    ({ theme }) => css`
-      position: absolute;
-      top: ${theme.spacing.lg};
-      left: ${theme.spacing.lg};
-      font-size: ${theme.fontSize.lg};
-      font-weight: ${theme.fontSize.lg};
-    `
-  ),
+export const DigitalClockStyles = {
   Clock: styled.div(
     ({ theme }) => css`
       display: flex;
@@ -56,4 +38,39 @@ const SC = {
   `,
 };
 
-export default SC;
+export const SideBarStyles = {
+  Wrapper: styled.aside(
+    ({ theme }) => css`
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-70%, -50%);
+      width: 140px;
+      z-index: 1;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: translate(0, -50%);
+      }
+    `
+  ),
+  Item: styled.div<{ isActive: boolean }>(
+    ({ theme, isActive }) => css`
+      padding: ${theme.spacing.sm};
+      transition: transform 0.3s, background-color 0.3s;
+      border: 1px solid ${theme.palette.primary.main};
+      background-color: ${theme.palette.common.white};
+      cursor: pointer;
+
+      ${isActive &&
+      css`
+        background-color: ${theme.palette.primary.main};
+        color: ${theme.palette.primary.contrastText};
+      `}
+
+      &:hover {
+        transform: translate(10%, 0);
+      }
+    `
+  ),
+};
