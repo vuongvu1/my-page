@@ -15,6 +15,15 @@ const About = () => {
         </SC.Column>
         <SC.Column>
           <SC.Info>
+            <a href="https://stackoverflow.com/users/10649754/vuongvu">
+              <img
+                src="https://stackoverflow.com/users/flair/10649754.png"
+                width="208"
+                height="58"
+                alt="profile for vuongvu at Stack Overflow"
+                title="profile for vuongvu at Stack Overflow"
+              />
+            </a>
             <Text type="h1" color={palette.primary.main}>
               About me
             </Text>
