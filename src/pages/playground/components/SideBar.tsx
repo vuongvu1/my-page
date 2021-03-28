@@ -1,11 +1,13 @@
 import { FC } from "react";
-import { TabProps } from "../MiniMap";
+import { useLocation, useHistory } from "react-router-dom";
+import queryString from "query-string";
+
+import { TabProps } from "../TabsData";
 import { SideBarStyles as SC } from "./styles";
 
 type SideBarProps = {
   allTabs: Array<TabProps>;
   activeTab: string;
-  setActiveTab: (newTab: TabProps) => void;
 };
 
 type ItemProps = {
@@ -21,11 +23,15 @@ const Item: FC<ItemProps> = ({ children, active, onClick }) => {
   );
 };
 
-const SideBar: FC<SideBarProps> = ({ allTabs, activeTab, setActiveTab }) => {
+const SideBar: FC<SideBarProps> = ({ allTabs, activeTab }) => {
+  const { search, pathname } = useLocation();
+  const { push } = useHistory();
+
   const handleClick = (tabKey: string) => {
-    const selectedTab = allTabs.find(({ key }) => key === tabKey) || allTabs[0];
-    console.log(selectedTab);
-    setActiveTab(selectedTab);
+    const query = queryString.parse(search);
+    query.key = tabKey;
+
+    push({ pathname, search: queryString.stringify(query) });
   };
 
   return (
