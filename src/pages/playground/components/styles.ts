@@ -50,7 +50,7 @@ export const SideBarStyles = {
       transition: transform 0.3s;
 
       &:hover {
-        transform: translate(-20%, -50%);
+        transform: translate(-26%, -50%);
       }
     `
   ),
@@ -60,6 +60,7 @@ export const SideBarStyles = {
       padding-left: 80px;
       transition: transform 0.3s, background-color 0.3s;
       border: 1px solid ${theme.palette.primary.main};
+      border-left: none;
       background-color: ${theme.palette.common.white};
       cursor: pointer;
       font-weight: bold;
@@ -71,7 +72,7 @@ export const SideBarStyles = {
       `}
 
       &:hover {
-        transform: translate(20%, 0);
+        transform: translate(15%, 0);
       }
     `
   ),
