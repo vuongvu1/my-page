@@ -10,7 +10,7 @@ const Projects = () => {
     <Section id="projects-section">
       <SC.Wrapper>
         <Text type="h1" color={palette.primary.contrastText}>
-          Projects
+          Some Projects
         </Text>
         <SC.Body>
           <Card

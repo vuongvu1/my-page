@@ -25,7 +25,7 @@ const About = () => {
               />
             </a>
             <Text type="h1" color={palette.primary.main}>
-              About me
+              About Me
             </Text>
             <Text type="body" color={palette.primary.main}>
               Hey, my name's Vuong Vu.

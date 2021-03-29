@@ -69,7 +69,7 @@ const Index = styled.div(
     transform: translate(-50%, -50%);
     border-radius: 50%;
     background-color: ${theme.palette.common.hover};
-    color: ${theme.palette.primary.main};
+    color: ${theme.palette.primary.contrastText};
     width: 30px;
     height: 30px;
     font-weight: bold;

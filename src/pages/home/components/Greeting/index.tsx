@@ -12,7 +12,7 @@ const Greeting = () => {
         <SC.Column>
           <SC.Info>
             <Text type="h1" color={palette.primary.contrastText}>
-              Hi, I'm Vuong Vu
+              Hi, this is Vuong Vu
             </Text>
             <Text type="h3" color={palette.primary.contrastText}>
               Frontend Developer

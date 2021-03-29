@@ -23,7 +23,7 @@ const SC = {
   Info: styled.div(
     ({ theme }) => css`
       padding: ${theme.spacing.md};
-      background: rgba(76, 175, 80, 0.4);
+      background: rgba(76, 175, 80, 0.6);
       text-shadow: 2px 2px ${theme.palette.primary.main};
       border-radius: 50%;
       padding-left: 40px;
