@@ -28,16 +28,9 @@ const About = () => {
               About Me
             </Text>
             <Text type="body" color={palette.primary.main}>
-              Hey, my name's Vuong Vu.
-            </Text>
-            <Text type="body" color={palette.primary.main}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              feugiat tortor velit, vitae commodo ex malesuada et.
-            </Text>
-            <Text type="body" color={palette.primary.main}>
-              Phasellus rhoncus, nisi et finibus porta, massa nisi luctus nulla,
-              at blandit quam ex sit amet ante. Donec pulvinar cursus magna vel
-              lacinia. Ut feugiat nec justo nec eleifend.
+              Hi, My name's Vuong Vu. I'm a frontend developer working at 2359
+              Media, Singapore. I have 4 years of working professionally, of
+              which 3 years experience with React.
             </Text>
           </SC.Info>
         </SC.Column>

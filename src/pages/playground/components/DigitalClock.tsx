@@ -14,7 +14,7 @@ const Block = memo(
   }) => (
     <SC.NumberWrapper num={current} isMonth={isMonth}>
       {[...new Array(total)].map((_, index) => (
-        <SC.Number isShow={current === index}>
+        <SC.Number isShow={current === index} key={index}>
           {isMonth ? MONTHS_MAP[index] : index}
         </SC.Number>
       ))}

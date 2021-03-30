@@ -27,7 +27,8 @@ const SC = {
   Info: styled.div(
     ({ theme }) => css`
       padding: ${theme.spacing.md};
-      background: rgba(76, 175, 80, 0.6);
+      padding-top: 0;
+      background: rgba(1, 68, 33, 0.8);
       text-shadow: 2px 2px ${theme.palette.primary.main};
       border-radius: 50%;
       min-width: 220px;
