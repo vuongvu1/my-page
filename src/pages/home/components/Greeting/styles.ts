@@ -36,6 +36,11 @@ const SC = {
   Link: styled.a(
     ({ theme }) => css`
       color: ${theme.palette.primary.contrastText};
+      transition: color 0.3s;
+
+      &:hover {
+        color: ${theme.palette.common.hover};
+      }
     `
   ),
 };

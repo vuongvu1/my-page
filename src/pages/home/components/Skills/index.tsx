@@ -25,9 +25,11 @@ const Skills = () => {
   return (
     <Section bgImage={BackgroundImage} id="skills-section">
       <SC.Wrapper>
-        <Text type="h1" color={palette.primary.contrastText}>
-          My Skills
-        </Text>
+        <SC.Title>
+          <Text type="h1" color={palette.primary.contrastText}>
+            My Skills
+          </Text>
+        </SC.Title>
         <SC.Body>
           <Box title="Languages" items={Languages} />
           <Box title="Technologies" items={Technologies} />
