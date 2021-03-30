@@ -20,7 +20,15 @@ const SC = {
       padding: ${theme.spacing.lg};
     `
   ),
-  Info: styled.div(({ theme }) => css``),
+  Info: styled.div(
+    ({ theme }) => css`
+      text-align: center;
+
+      ${mediaQueries("md")`
+        text-align: left;
+      `}
+    `
+  ),
 };
 
 export default SC;

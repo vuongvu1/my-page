@@ -1,7 +1,7 @@
 import { useTheme } from "styled-components";
 import { Section } from "atoms";
 import { Image, Text } from "atoms";
-import avatar from "assets/images/cat.webp";
+import avatar from "assets/images/avatar.webp";
 import SC from "./styles";
 
 const About = () => {
