@@ -17,7 +17,11 @@ const SC = {
     ({ theme }) => css`
       display: grid;
       place-items: center;
-      padding: ${theme.spacing.lg};
+      padding: ${theme.spacing.sm};
+
+      ${mediaQueries("md")`
+        padding: ${theme.spacing.lg};
+      `}
     `
   ),
   Info: styled.div(
@@ -26,10 +30,12 @@ const SC = {
       background: rgba(76, 175, 80, 0.6);
       text-shadow: 2px 2px ${theme.palette.primary.main};
       border-radius: 50%;
-      padding-left: 40px;
+      min-width: 220px;
 
       ${mediaQueries("md")`
         margin-left: ${theme.spacing.lg};
+        padding-left: 40px;
+        min-width: 340px;
       `}
     `
   ),
