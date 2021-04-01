@@ -1,5 +1,5 @@
 import { useTheme } from "styled-components";
-import { Section, Text } from "atoms";
+import { Section, Text, Link } from "atoms";
 import BackgroundImage from "assets/images/background.webp";
 import SC from "./styles";
 
@@ -20,12 +20,11 @@ const Greeting = () => {
             </Text>
             <Text color={textColor}>
               <SC.NoWrap>
-                want to know more{" "}
-                <SC.Link href="/#about-section">about me</SC.Link>?
+                want to know more <Link href="/#about-section">about me</Link>?
               </SC.NoWrap>
               <SC.NoWrap>
-                checkout my <SC.Link href="/#skills-section">skills</SC.Link>{" "}
-                and <SC.Link href="/#projects-section">projects</SC.Link>
+                checkout my <Link href="/#skills-section">skills</Link> and{" "}
+                <Link href="/#projects-section">projects</Link>
               </SC.NoWrap>
             </Text>
           </SC.Info>
