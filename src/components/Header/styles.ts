@@ -44,10 +44,12 @@ const SC = {
         text-decoration: none;
         color: ${theme.palette.primary.contrastText};
         font-weight: ${theme.fontWeight.md};
-        transition: color ${theme.transitionTime};
 
         &:hover {
-          color: ${theme.palette.common.hover};
+          * {
+            transition: color ${theme.transitionTime};
+            color: ${theme.palette.common.hover};
+          }
         }
       }
     `

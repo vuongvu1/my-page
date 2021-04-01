@@ -50,6 +50,9 @@ const SC = {
       }
     `
   ),
+  NoWrap: styled.div`
+    white-space: nowrap;
+  `,
 };
 
 export default SC;

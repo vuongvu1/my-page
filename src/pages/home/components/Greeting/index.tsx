@@ -19,10 +19,14 @@ const Greeting = () => {
               <Text color={textColor}>I'm a</Text> Frontend Developer
             </Text>
             <Text color={textColor}>
-              want to know more{" "}
-              <SC.Link href="/#about-section">about me</SC.Link>? checkout my{" "}
-              <SC.Link href="/#skills-section">skills</SC.Link> and{" "}
-              <SC.Link href="/#projects-section">projects</SC.Link>
+              <SC.NoWrap>
+                want to know more{" "}
+                <SC.Link href="/#about-section">about me</SC.Link>?
+              </SC.NoWrap>
+              <SC.NoWrap>
+                checkout my <SC.Link href="/#skills-section">skills</SC.Link>{" "}
+                and <SC.Link href="/#projects-section">projects</SC.Link>
+              </SC.NoWrap>
             </Text>
           </SC.Info>
         </SC.Column>
