@@ -4,11 +4,12 @@ import SC from "./styles";
 type Props = {
   href: string;
   color?: string;
+  target?: string;
 };
 
-const Link: FC<Props> = ({ href, color, children }) => {
+const Link: FC<Props> = ({ href, color, target, children }) => {
   return (
-    <SC.Link href={href} color={color}>
+    <SC.Link href={href} color={color} target={target}>
       {children}
     </SC.Link>
   );

@@ -9,13 +9,14 @@ const SC = {
       border: 2px solid ${theme.palette.common.dark};
       background-color: ${theme.palette.common.light};
       border-radius: ${theme.borderRadius};
-      transition: transform ${theme.transitionTime};
+      transition: transform ${theme.transitionTime},
+        box-shadow ${theme.transitionTime};
       padding: ${theme.spacing.sm} ${theme.spacing.md};
-      box-shadow: ${theme.palette.common.boxShadowColor};
       text-align: center;
 
       &:hover {
-        transform: rotate(-2deg);
+        box-shadow: ${theme.palette.common.boxShadowColor};
+        transform: scale(102%);
       }
     `
   ),

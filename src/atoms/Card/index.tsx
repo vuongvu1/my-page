@@ -1,5 +1,6 @@
 import { FC } from "react";
-import { Text } from "atoms";
+import { useTheme } from "styled-components";
+import { Text, Link } from "atoms";
 import SC from "./styles";
 
 type Props = {
@@ -7,16 +8,22 @@ type Props = {
   alt?: string;
   bgColor?: string;
   title: string;
-  description: string;
+  url?: string;
 };
 
-const Image: FC<Props> = ({ imgSrc, alt, bgColor, title, description }) => {
+const Image: FC<Props> = ({ imgSrc, alt, bgColor, title, url, children }) => {
+  const { palette } = useTheme();
+
   return (
     <SC.Wrapper bgColor={bgColor}>
       <img src={imgSrc} alt={alt || "image"} />
       <SC.Content>
-        <Text type="h3">{title}</Text>
-        <Text type="body">{description}</Text>
+        <Text type="h3">
+          <Link href={url || "#"} target="_blank" color={palette.primary.main}>
+            {title}
+          </Link>
+        </Text>
+        <Text type="body">{children}</Text>
       </SC.Content>
     </SC.Wrapper>
   );
