@@ -39,8 +39,9 @@ const Projects = () => {
             package that helps React apps to implement language support easily.
           </Card>
           <Card imgSrc={cat} title="Design Language System">
-            A private Node package that includes high-quality components to
-            create the same user experience for Singtel products.
+            A private Node package that contains high-quality reusable
+            components to create the same user experience among Singtel
+            products.
           </Card>
           <Card
             imgSrc={passgowhere}
