@@ -54,6 +54,19 @@ const SC = {
       }
     `
   ),
+  MobileWrapper: styled.div(
+    ({ theme }) => css`
+      background-color: ${theme.palette.primary.main};
+      padding: ${theme.spacing.sm};
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      li {
+        margin-bottom: 10px;
+      }
+    `
+  ),
 };
 
 export default SC;

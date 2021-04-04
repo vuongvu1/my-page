@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import queryString from "query-string";
 
 import { Section } from "atoms";
+import { useScreen } from "utils/hooks";
 import SideBar from "./components/SideBar";
 import SC from "./styles";
 import TabsData from "./TabsData";
@@ -12,6 +13,7 @@ const Playground = () => {
   const { palette } = useTheme();
   const [activeTab, setActiveTab] = useState(TabsData[0]);
   const { search } = useLocation();
+  const { isLarge: isScreenBig } = useScreen();
 
   const ActiveComponent = activeTab.component;
 
@@ -25,11 +27,19 @@ const Playground = () => {
 
   return (
     <Section bgColor={palette.common.light}>
-      <SideBar allTabs={TabsData} activeTab={activeTab.key} />
-      <SC.Wrapper>
-        <SC.Title>{activeTab.name}</SC.Title>
-        <ActiveComponent />
-      </SC.Wrapper>
+      {isScreenBig ? (
+        <>
+          <SideBar allTabs={TabsData} activeTab={activeTab.key} />
+          <SC.Wrapper>
+            <SC.Title>{activeTab.name}</SC.Title>
+            <ActiveComponent />
+          </SC.Wrapper>
+        </>
+      ) : (
+        <SC.Wrapper>
+          <div>This page doesn't support small view 😞</div>
+        </SC.Wrapper>
+      )}
     </Section>
   );
 };
