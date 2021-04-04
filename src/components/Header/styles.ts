@@ -57,14 +57,34 @@ const SC = {
   MobileWrapper: styled.div(
     ({ theme }) => css`
       background-color: ${theme.palette.primary.main};
-      padding: ${theme.spacing.sm};
+      padding: ${theme.spacing.lg};
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
 
       li {
-        margin-bottom: 10px;
+        padding: 0;
+        list-style-type: none;
       }
+
+      span {
+        font-size: ${theme.fontSize.md};
+      }
+
+      > * {
+        margin-bottom: 20px;
+      }
+    `
+  ),
+  CloseWrapper: styled.div(
+    ({ theme }) => css`
+      align-self: flex-end;
     `
   ),
 };
