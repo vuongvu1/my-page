@@ -36,6 +36,7 @@ const SC = {
       margin: ${theme.spacing.sm};
       img {
         width: 100px;
+        height: 100px;
       }
     `
   ),

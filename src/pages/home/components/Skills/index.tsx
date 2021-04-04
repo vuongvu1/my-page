@@ -1,29 +1,40 @@
 import { useTheme } from "styled-components";
 import { Section, Text, Box } from "atoms";
-import cat from "assets/images/cat.webp";
-import BackgroundImage from "assets/images/background-2.webp";
+import background from "assets/images/background-2.webp";
+import git from "assets/images/git.webp";
+import vscode from "assets/images/vscode.webp";
+import redux from "assets/images/redux.webp";
+import nodejs from "assets/images/nodejs.webp";
+import reactnative from "assets/images/react-native.webp";
+import react from "assets/images/react.webp";
+import javascript from "assets/images/javascript.webp";
+import typescript from "assets/images/typescript.webp";
+import docker from "assets/images/docker.webp";
 import SC from "./styles";
 
 const Languages = [
-  { logo: cat, name: "JavaScript" },
-  { logo: cat, name: "TypeScript" },
+  { logo: javascript, name: "JavaScript" },
+  { logo: typescript, name: "TypeScript" },
 ];
+
 const Technologies = [
-  { logo: cat, name: "React" },
-  { logo: cat, name: "React Native" },
-  { logo: cat, name: "Nodejs" },
-  { logo: cat, name: "Redux" },
+  { logo: react, name: "React" },
+  { logo: redux, name: "Redux" },
+  { logo: reactnative, name: "React Native" },
+  { logo: nodejs, name: "Nodejs" },
 ];
+
 const Tools = [
-  { logo: cat, name: "VSCode" },
-  { logo: cat, name: "Git" },
+  { logo: vscode, name: "VSCode" },
+  { logo: docker, name: "Docker" },
+  { logo: git, name: "Git" },
 ];
 
 const Skills = () => {
   const { palette } = useTheme();
 
   return (
-    <Section bgImage={BackgroundImage} id="skills-section">
+    <Section bgImage={background} id="skills-section">
       <SC.Wrapper>
         <SC.Title>
           <Text type="h1" color={palette.primary.contrastText}>
