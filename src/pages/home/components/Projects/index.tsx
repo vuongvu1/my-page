@@ -26,7 +26,11 @@ const Projects = () => {
             A Chrome extension that lets users comment, share, socialize...
             while using Netflix.
           </Card>
-          <Card imgSrc={ea} title="EA Creative Hub" url="#">
+          <Card
+            imgSrc={ea}
+            title="EA Creative Hub"
+            modalContent={[ea, til, dls]}
+          >
             An internal Content Management System made for EA products.
           </Card>
           <Card

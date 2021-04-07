@@ -16,7 +16,7 @@ const SC = {
 
       &:hover {
         box-shadow: ${theme.palette.common.boxShadowColor};
-        transform: scale(102%);
+        transform: scale(1.02);
       }
     `
   ),

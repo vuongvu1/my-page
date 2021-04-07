@@ -6,6 +6,7 @@ const SC = {
       color: ${color || theme.palette.primary.contrastText};
       transition: color 0.3s;
       text-decoration: none;
+      cursor: pointer;
 
       &:hover {
         color: ${theme.palette.common.hover};
