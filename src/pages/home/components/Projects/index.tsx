@@ -1,9 +1,11 @@
 import { useTheme } from "styled-components";
 import { Section, Text, Card, Link } from "atoms";
-import cat from "assets/images/cat.webp";
 import wiretap from "assets/images/wiretap.webp";
 import passgowhere from "assets/images/passgowhere.webp";
-import reactEasyLocalization from "assets/images/react-easy-localization.webp";
+import til from "assets/images/today-i-learned.webp";
+import reacteasylocalization from "assets/images/react-easy-localization.webp";
+import ea from "assets/images/ea.webp";
+import dls from "assets/images/dls.webp";
 import SC from "./styles";
 
 const Projects = () => {
@@ -24,8 +26,11 @@ const Projects = () => {
             A Chrome extension that lets users comment, share, socialize...
             while using Netflix.
           </Card>
+          <Card imgSrc={ea} title="EA Creative Hub" url="#">
+            An internal Content Management System made for EA products.
+          </Card>
           <Card
-            imgSrc={reactEasyLocalization}
+            imgSrc={reacteasylocalization}
             title="react-easy-localization"
             url="https://www.npmjs.com/package/react-easy-localization"
           >
@@ -36,21 +41,30 @@ const Projects = () => {
             >
               react-localization
             </Link>{" "}
-            package that helps React apps to implement language support easily.
+            that helps React applications to implement language internalization
+            easily.
           </Card>
-          <Card imgSrc={cat} title="Design Language System">
-            A private Node package that contains high-quality reusable
-            components to create the same user experience among Singtel
-            products.
+          <Card imgSrc={dls} title="Design Language System">
+            An enterprise-level design system with high-quality components,
+            performance optimized, to create a similar user experience among
+            Singtel products.
           </Card>
           <Card
             imgSrc={passgowhere}
             title="PassGoWhere"
             url="https://pass.gowhere.gov.sg/"
           >
-            A web app that allows Singapore foreign workers to apply for an Exit
-            Pass to go outside of their dormitories with some specific
+            A web application that allows Singapore foreign workers to apply for
+            an Exit Pass to go outside of their dormitories with some specific
             timeslots, in order to control the spread of COVID-19.
+          </Card>
+          <Card
+            imgSrc={til}
+            title="Today I Learned"
+            url="https://til.vuongvu.me/"
+          >
+            A place I share what I've learned, to keep notes, and look up to
+            when necessary.
           </Card>
         </SC.Body>
       </SC.Wrapper>
