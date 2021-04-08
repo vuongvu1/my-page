@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import { useTheme } from "styled-components";
-import { Text, Link, Modal } from "atoms";
+import { Text, Link, Modal, Slider } from "atoms";
 import SC from "./styles";
 
 type Props = {
@@ -45,10 +45,7 @@ const Image: FC<Props> = ({
       </SC.Content>
       {modalContent && (
         <Modal visible={modalVisible} close={closeModal}>
-          some content
-          {/* {modalContent.map((src) => (
-            <img src={src} alt={alt || title} />
-          ))} */}
+          <Slider content={modalContent} />
         </Modal>
       )}
     </SC.Wrapper>

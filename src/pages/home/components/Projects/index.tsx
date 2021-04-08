@@ -6,6 +6,8 @@ import til from "assets/images/today-i-learned.webp";
 import reacteasylocalization from "assets/images/react-easy-localization.webp";
 import ea from "assets/images/ea.webp";
 import dls from "assets/images/dls.webp";
+import eaProjectDetail from "assets/images/ea";
+import dlsProjectDetail from "assets/images/dls";
 import SC from "./styles";
 
 const Projects = () => {
@@ -29,7 +31,7 @@ const Projects = () => {
           <Card
             imgSrc={ea}
             title="EA Creative Hub"
-            modalContent={[ea, til, dls]}
+            modalContent={eaProjectDetail}
           >
             An internal Content Management System made for EA products.
           </Card>
@@ -48,7 +50,11 @@ const Projects = () => {
             that helps React applications to implement language internalization
             easily.
           </Card>
-          <Card imgSrc={dls} title="Design Language System">
+          <Card
+            imgSrc={dls}
+            title="Design Language System"
+            modalContent={dlsProjectDetail}
+          >
             An enterprise-level design system with high-quality components,
             performance optimized, to create a similar user experience among
             Singtel products.

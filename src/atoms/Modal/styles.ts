@@ -20,9 +20,10 @@ const SC = {
   Wrapper: styled.div<WrapperProps>(
     ({ theme }) => css`
       position: relative;
+      max-width: 80vw;
       min-width: 200px;
       min-height: 200px;
-      background-color: white;
+      background-color: transparent;
     `
   ),
   CloseWrapper: styled.div`

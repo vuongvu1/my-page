@@ -16,9 +16,9 @@ const Modal: FC<Props> = ({ visible, close, children }) => {
   const { isLarge } = useScreen();
 
   useEffect(() => {
-    if (visible && isLarge) {
+    if (visible) {
       bodyElement.style.overflow = "hidden";
-      bodyElement.style.paddingRight = "16px";
+      bodyElement.style.paddingRight = isLarge ? "16px" : "0";
     } else {
       bodyElement.style.overflow = "auto";
       bodyElement.style.paddingRight = "0";
