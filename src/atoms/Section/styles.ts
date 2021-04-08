@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { mediaQueries } from "globalStyles";
 
 type WrapperProps = {
   bgColor?: string;
@@ -16,10 +17,13 @@ const SC = {
       ${bgImage &&
       css`
         background-image: url("${bgImage}");
-        background-attachment: fixed;
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
+
+        ${mediaQueries("sm")`
+          background-attachment: fixed;
+        `}
       `}
     `
   ),
