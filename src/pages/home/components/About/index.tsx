@@ -15,7 +15,11 @@ const About = () => {
         </SC.Column>
         <SC.Column>
           <SC.Info>
-            <a href="https://stackoverflow.com/users/10649754/vuongvu">
+            <a
+              href="https://stackoverflow.com/users/10649754/vuongvu"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src="https://stackoverflow.com/users/flair/10649754.png"
                 width="208"
