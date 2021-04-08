@@ -1,26 +1,67 @@
 import { useTheme } from "styled-components";
-import { Section, Text, ProgressSegment } from "atoms";
+import { Section, Text, ProgressSegment, Link } from "atoms";
 import SC from "./styles";
 
 const timeline = [
   {
-    title: "2020",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat tortor velit, vitae commodo ex malesuada et.",
+    title: "Mar 2021",
+    description: (
+      <>
+        Created{" "}
+        <Link href="https://til.vuongvu.me/" target="_blank">
+          Today I Learned
+        </Link>{" "}
+        website, start documenting what I've learned.
+      </>
+    ),
   },
   {
-    title: "2019",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Mar 2020",
+    description: (
+      <>
+        Joined{" "}
+        <Link href="https://www.2359.co/" target="_blank">
+          2359 Media
+        </Link>{" "}
+        as a frontend developer, moving to Singapore.
+      </>
+    ),
   },
   {
-    title: "2018",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat tortor velit, vitae commodo ex malesuada et.",
+    title: "July 2018",
+    description: (
+      <>
+        Joined{" "}
+        <Link href="https://www.codelink.io/" target="_blank">
+          CodeLink
+        </Link>{" "}
+        as a frontend developer.
+      </>
+    ),
   },
   {
-    title: "2017",
-    description:
-      "Lorem ipsum dolor sit amet, Curabitur feugiat tortor velit, vitae commodo ex malesuada et.",
+    title: "March 2017",
+    description: (
+      <>
+        Joined{" "}
+        <Link href="https://www.kms-technology.com/" target="_blank">
+          KMS Technology
+        </Link>{" "}
+        as a fresher developer, completed KMS Next (fresher training program).
+      </>
+    ),
+  },
+  {
+    title: "April 2017",
+    description: (
+      <>
+        Graduated from{" "}
+        <Link href="https://www.hcmut.edu.vn/en" target="_blank">
+          HCM University of Technology
+        </Link>{" "}
+        with a Bachelor's Degree (Honor program), major in Computer Engineering.
+      </>
+    ),
   },
 ];
 

@@ -1,11 +1,11 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import { useTheme } from "styled-components";
 import { Text } from "atoms";
 import SC from "./styles";
 
 type Props = {
   title: string;
-  description: string;
+  description: ReactNode;
   index: number;
   isFirst?: boolean;
   isLast?: boolean;
