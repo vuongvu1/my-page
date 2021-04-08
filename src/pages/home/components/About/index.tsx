@@ -32,8 +32,8 @@ const About = () => {
               About Me
             </Text>
             <Text type="body" color={palette.primary.main}>
-              Hi, My name's Vuong Vu. I'm a frontend developer from Ho Chi Minh
-              city, Vietnam and currently working at{" "}
+              Hi, My name's Vuong Vu. I'm a frontend developer from Vietnam and
+              currently working at{" "}
               <Link href="https://www.2359.co/" color={palette.primary.main}>
                 2359 Media
               </Link>

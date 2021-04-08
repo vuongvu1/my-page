@@ -11,7 +11,7 @@ const timeline = [
         <Link href="https://til.vuongvu.me/" target="_blank">
           Today I Learned
         </Link>{" "}
-        website, start documenting what I've learned.
+        website, start documenting what I have learned.
       </>
     ),
   },

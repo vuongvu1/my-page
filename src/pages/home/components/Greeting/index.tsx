@@ -20,7 +20,7 @@ const Greeting = () => {
             </Text>
             <Text color={textColor}>
               <SC.NoWrap>
-                want to know more <Link href="/#about-section">about me</Link>?
+                Want to know more <Link href="/#about-section">about me</Link>?
               </SC.NoWrap>
               <SC.NoWrap>
                 checkout my <Link href="/#skills-section">skills</Link> and{" "}
