@@ -37,7 +37,6 @@ const SC = {
       transition: all 0.3s;
       border-color: transparent;
       border-width: 0;
-      border-bottom-width: 1px;
 
       &:hover {
         border-color: ${theme.palette.common.white};

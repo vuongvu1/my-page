@@ -29,10 +29,10 @@ const Slider: FC<Props> = ({ content }) => {
         />
       ))}
       <SC.Button left onClick={decrease}>
-        &lt;
+        &laquo;
       </SC.Button>
       <SC.Button right onClick={increase}>
-        &gt;
+        &raquo;
       </SC.Button>
     </SC.Wrapper>
   );

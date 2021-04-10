@@ -10,6 +10,7 @@ type Props = {
   title: string;
   url?: string;
   modalContent?: string[];
+  techStack: string[];
 };
 
 const Image: FC<Props> = ({
@@ -19,6 +20,7 @@ const Image: FC<Props> = ({
   title,
   url,
   modalContent,
+  techStack,
   children,
 }) => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -41,6 +43,8 @@ const Image: FC<Props> = ({
             {title}
           </Link>
         </Text>
+        {techStack.join(", ")}
+        <div>___</div>
         <Text type="body">{children}</Text>
       </SC.Content>
       {modalContent && (
