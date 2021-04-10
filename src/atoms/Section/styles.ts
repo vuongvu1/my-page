@@ -17,7 +17,7 @@ const SC = {
       ${bgImage &&
       css`
         background-image: url("${bgImage}");
-        background-position: left;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
 

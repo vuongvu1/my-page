@@ -1,6 +1,6 @@
 import { useTheme } from "styled-components";
 import { Section } from "atoms";
-import { Image, Text, Link } from "atoms";
+import { Image, Text } from "atoms";
 import avatar from "assets/images/avatar.webp";
 import SC from "./styles";
 
@@ -32,12 +32,8 @@ const About = () => {
               About Me
             </Text>
             <Text type="body" color={palette.primary.main}>
-              Hi, My name's Vuong Vu. I'm a frontend developer from Vietnam and
-              currently working at{" "}
-              <Link href="https://www.2359.co/" color={palette.primary.main}>
-                2359 Media
-              </Link>
-              , Singapore.
+              Hi there, Vuong Vu’s here. I’m a 27-year-old Front-end Developer
+              from Vietnam, currently located in Singapore.
             </Text>
             <Text>
               I have 4 years of working professionally, of which 3 years

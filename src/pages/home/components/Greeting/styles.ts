@@ -30,14 +30,7 @@ const SC = {
       padding-top: 0;
       background: rgba(1, 68, 33, 0.8);
       text-shadow: 2px 2px ${theme.palette.primary.main};
-      border-radius: 50%;
-      min-width: 220px;
-
-      ${mediaQueries("md")`
-        margin-left: ${theme.spacing.lg};
-        padding-left: 40px;
-        min-width: 340px;
-      `}
+      border-radius: ${theme.borderRadius};
     `
   ),
   NoWrap: styled.div`

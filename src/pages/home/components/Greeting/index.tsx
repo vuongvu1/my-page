@@ -13,10 +13,12 @@ const Greeting = () => {
         <SC.Column>
           <SC.Info>
             <Text type="h1" color={textColor}>
-              <Text color={textColor}>Hi, this is</Text> Vuong Vu
+              <Text color={textColor}>Hello, this is</Text> Vuong Vu
             </Text>
             <Text type="h3" color={textColor}>
-              <Text color={textColor}>I'm a</Text> Frontend Developer
+              <SC.NoWrap>
+                <Text color={textColor}>I am a</Text> Front-end Developer
+              </SC.NoWrap>
             </Text>
             <Text color={textColor}>
               <SC.NoWrap>
@@ -24,7 +26,7 @@ const Greeting = () => {
               </SC.NoWrap>
               <SC.NoWrap>
                 checkout my <Link href="/#skills-section">skills</Link> and{" "}
-                <Link href="/#projects-section">projects</Link>
+                <Link href="/#projects-section">projects</Link>.
               </SC.NoWrap>
             </Text>
           </SC.Info>
