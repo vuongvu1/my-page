@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import { useTheme } from "styled-components";
 import { Text, Link, Modal, Slider } from "atoms";
+import { Github } from "assets/icons";
 import SC from "./styles";
 
 type Props = {
@@ -11,6 +12,7 @@ type Props = {
   url?: string;
   modalContent?: string[];
   techStack: string[];
+  githubUrl?: string;
 };
 
 const Image: FC<Props> = ({
@@ -21,6 +23,7 @@ const Image: FC<Props> = ({
   url,
   modalContent,
   techStack,
+  githubUrl,
   children,
 }) => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -44,6 +47,14 @@ const Image: FC<Props> = ({
           </Link>
         </Text>
         {techStack.join(", ")}
+        {githubUrl && (
+          <>
+            {" "}
+            <Link href={githubUrl} target="_blank">
+              <Github />
+            </Link>
+          </>
+        )}
         <div>___</div>
         <Text type="body">{children}</Text>
       </SC.Content>
