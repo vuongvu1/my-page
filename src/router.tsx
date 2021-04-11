@@ -1,7 +1,11 @@
+import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { Home, About, Error, Playground } from "pages";
-import { Header, Footer } from "components";
+import { Header, Footer, Loading } from "components";
+const Home = lazy(() => import("pages/home"));
+const About = lazy(() => import("pages/about"));
+const Playground = lazy(() => import("pages/playground"));
+const Error = lazy(() => import("pages/error"));
 
 const App = () => {
   return (
@@ -9,18 +13,12 @@ const App = () => {
       <>
         <Header />
         <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/about" exact>
-            <About />
-          </Route>
-          <Route path="/playground" exact>
-            <Playground />
-          </Route>
-          <Route path="*">
-            <Error />
-          </Route>
+          <Suspense fallback={<Loading />}>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" exact component={About} />
+            <Route path="/playground" exact component={Playground} />
+            <Route path="*" component={Error} />
+          </Suspense>
         </Switch>
         <Footer />
       </>
