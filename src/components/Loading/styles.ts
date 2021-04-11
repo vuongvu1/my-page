@@ -1,13 +1,8 @@
 import styled, { css, keyframes } from "styled-components";
 
 const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 `;
 
 const SC = {
@@ -25,13 +20,12 @@ const SC = {
   ),
   Loading: styled.div(
     ({ theme }) => css`
-      width: 100px;
-      height: 10px;
-      background-color: ${theme.palette.primary.main};
-      animation-name: ${rotate};
-      animation-duration: 1000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
+      border: 16px solid ${theme.palette.common.white};
+      border-radius: 50%;
+      border-top: 16px solid ${theme.palette.primary.main};
+      width: 120px;
+      height: 120px;
+      animation: ${rotate} 0.8s linear infinite;
     `
   ),
 };

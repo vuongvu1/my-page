@@ -6,7 +6,7 @@ const SC = {
       position: absolute;
       left: 0;
       top: 50%;
-      transform: translate(-90%, -50%);
+      transform: translate(-80%, -50%);
       min-width: 240px;
       z-index: 1;
       transition: transform 0.3s;
