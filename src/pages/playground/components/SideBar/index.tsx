@@ -2,8 +2,8 @@ import { FC } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import queryString from "query-string";
 
-import { TabProps } from "../TabsData";
-import { SideBarStyles as SC } from "./styles";
+import { TabProps } from "../../TabsData";
+import SC from "./styles";
 
 type SideBarProps = {
   allTabs: Array<TabProps>;

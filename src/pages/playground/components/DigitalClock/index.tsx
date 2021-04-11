@@ -1,6 +1,6 @@
 import { useState, useEffect, memo } from "react";
 import { MONTHS_MAP, getCurrentTime } from "./utils";
-import { DigitalClockStyles as SC } from "./styles";
+import SC from "./styles";
 
 const Block = memo(
   ({
