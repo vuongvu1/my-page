@@ -6,7 +6,7 @@ export const DigitalClockStyles = {
       display: flex;
       justify-content: center;
       align-items: top;
-      transform: translate(0, 25%);
+      transform: translate(0, 35%);
     `
   ),
   NumberWrapper: styled.div<{ num: number; isMonth?: boolean }>(
@@ -27,7 +27,7 @@ export const DigitalClockStyles = {
 
       ${isShow &&
       css`
-        background-color: ${theme.palette.secondary.main};
+        background-color: ${theme.palette.primary.main};
         color: ${theme.palette.common.light};
         filter: unset;
       `}

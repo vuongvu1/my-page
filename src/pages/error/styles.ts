@@ -7,17 +7,6 @@ const SC = {
       height: calc(100vh - 135px);
       display: grid;
       place-items: center;
-      position: relative;
-      overflow: hidden;
-    `
-  ),
-  Title: styled.div(
-    ({ theme }) => css`
-      position: absolute;
-      top: ${theme.spacing.lg};
-      left: ${theme.spacing.lg};
-      font-size: ${theme.fontSize.lg};
-      font-weight: ${theme.fontSize.lg};
     `
   ),
 };
