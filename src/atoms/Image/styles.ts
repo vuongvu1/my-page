@@ -10,18 +10,6 @@ const Wrapper = styled.div(
     padding: ${theme.spacing.lg};
     display: grid;
     place-items: center;
-
-    ${mediaQueries("md")`
-      &:hover {
-        ${Border} {
-          transform: unset;
-          border-width: 0;
-          > img {
-            transform: unset;
-          }
-        }
-      }
-    `}
   `
 );
 

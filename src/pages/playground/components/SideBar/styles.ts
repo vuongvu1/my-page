@@ -1,5 +1,15 @@
 import styled, { css } from "styled-components";
 
+export const Menu = styled.div(
+  ({ theme }) => css`
+    transition: padding-right 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+    font-weight: bold;
+  `
+);
+
 const SC = {
   Wrapper: styled.aside(
     ({ theme }) => css`
@@ -13,6 +23,10 @@ const SC = {
 
       &:hover {
         transform: translate(-26%, -50%);
+
+        ${Menu} {
+          padding-right: 80px;
+        }
       }
     `
   ),

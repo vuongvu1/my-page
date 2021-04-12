@@ -2,8 +2,9 @@ import { FC } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import queryString from "query-string";
 
+import { Text } from "atoms";
 import { TabProps } from "../../TabsData";
-import SC from "./styles";
+import SC, { Menu } from "./styles";
 
 type SideBarProps = {
   allTabs: Array<TabProps>;
@@ -36,6 +37,9 @@ const SideBar: FC<SideBarProps> = ({ allTabs, activeTab }) => {
 
   return (
     <SC.Wrapper>
+      <Menu>
+        <Text>Menu</Text>
+      </Menu>
       {allTabs.map(({ key, name }) => (
         <Item
           active={activeTab === key}
