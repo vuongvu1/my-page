@@ -14,8 +14,10 @@ const SC = {
       right: 0;
       left: 0;
       background-color: ${theme.palette.primary.contrastText};
-      display: grid;
-      place-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
     `
   ),
   Loading: styled.div(
