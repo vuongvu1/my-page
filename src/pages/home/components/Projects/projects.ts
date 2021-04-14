@@ -1,6 +1,7 @@
 import wiretap from "assets/images/wiretap.webp";
 import passgowhere from "assets/images/passgowhere.webp";
 import til from "assets/images/today-i-learned.webp";
+import myPage from "assets/images/my-page.webp";
 import reacteasylocalization from "assets/images/react-easy-localization.webp";
 import ea from "assets/images/ea.webp";
 import dls from "assets/images/dls.webp";
@@ -44,7 +45,7 @@ const projects = [
     imgSrc: passgowhere,
     title: "PassGoWhere",
     url: "https://pass.gowhere.gov.sg/",
-    techStack: ["React", "Redux", "Tailwind"],
+    techStack: ["React", "TypeScript", "Tailwind"],
     desc:
       "A web application that allows Singapore foreign workers to apply for an Exit Pass to go outside of their dormitories with some specific timeslots, in order to control the spread of COVID-19.",
   },
@@ -56,6 +57,15 @@ const projects = [
     githubUrl: "https://github.com/vuongvu1/today-i-learned",
     desc:
       "A place I share what I've learned, to keep notes, and look up to when necessary.",
+  },
+  {
+    imgSrc: myPage,
+    title: "My Page",
+    url: "https://vuongvu.me/",
+    techStack: ["React", "TypeScript"],
+    githubUrl: "https://github.com/vuongvu1/my-page",
+    desc:
+      "This is my personal page which should have all information about me.",
   },
 ];
 
