@@ -17,7 +17,7 @@ export default function App() {
     { x: 2, y: 5 },
     { x: 3, y: 5 },
   ]);
-  const [dir, setDir] = useState<Direction>(Direction.UP);
+  const [dir, setDir] = useState<Direction>(Direction.RIGHT);
 
   const run = useCallback(() => {
     setSnake((currentSnake) => {

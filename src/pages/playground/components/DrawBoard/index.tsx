@@ -1,20 +1,34 @@
-import { useRef, useCallback } from "react";
+import { useState, useRef, useCallback } from "react";
+import SC from "./styles";
+
+const Colors = {
+  RED: "red",
+  BLUE: "blue",
+  GREEN: "green",
+  YELLOW: "yellow",
+  PINK: "pink",
+};
 
 export default function DrawBoard() {
+  const [color, setColor] = useState(Colors.GREEN);
   const canvasRef = useRef();
   const isDrawing = useRef<boolean>();
 
-  const draw = useCallback((canvas, event) => {
-    if (isDrawing.current) {
-      const rect = canvas.getBoundingClientRect();
-      var ctx = canvas.getContext("2d");
+  const draw = useCallback(
+    (canvas, event) => {
+      if (isDrawing.current) {
+        const rect = canvas.getBoundingClientRect();
+        var ctx = canvas.getContext("2d");
 
-      const x = event.clientX - rect.left;
-      const y = event.clientY - rect.top;
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
 
-      ctx.fillRect(x, y, 4, 4);
-    }
-  }, []);
+        ctx.fillStyle = color;
+        ctx.fillRect(x, y, 4, 4);
+      }
+    },
+    [color]
+  );
 
   const assignRef = useCallback(
     (node) => {
@@ -25,7 +39,7 @@ export default function DrawBoard() {
         node.addEventListener("mousemove", (event: MouseEvent) =>
           draw(node, event)
         );
-        node.addEventListener("mouseup", (event: MouseEvent) => {
+        node.addEventListener("mouseup", () => {
           isDrawing.current = false;
         });
         canvasRef.current = node;
@@ -46,14 +60,17 @@ export default function DrawBoard() {
 
   return (
     <div>
-      <canvas
-        ref={assignRef}
-        width="600"
-        height="600"
-        style={{ border: "1px solid black" }}
-      />
-      <br />
-      <button onClick={clear}>clear</button>
+      <SC.Canvas ref={assignRef} width="600" height="600" />
+      <SC.ButtonWrapper>
+        <button onClick={clear}>clear</button>
+        {Object.values(Colors).map((clr) => (
+          <SC.Button
+            key={clr}
+            backgroundColor={clr}
+            onClick={() => setColor(clr)}
+          />
+        ))}
+      </SC.ButtonWrapper>
     </div>
   );
 }
