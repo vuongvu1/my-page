@@ -9,17 +9,18 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const Box = styled.div<{ isActive: boolean }>`
-  width: 35px;
-  height: 35px;
-  border: 1px solid grey;
-  margin: 2px;
-  background-color: white;
-  transition: all 0.3s;
+export const Box = styled.div<{ isActive: boolean }>(
+  ({ theme, isActive }) => css`
+    width: 35px;
+    height: 35px;
+    border: 1px solid grey;
+    margin: 2px;
+    background-color: white;
+    transition: all 0.3s;
 
-  ${(p) =>
-    p.isActive &&
+    ${isActive &&
     css`
-      background-color: red;
+      background-color: ${theme.palette.primary.main};
     `}
-`;
+  `
+);
