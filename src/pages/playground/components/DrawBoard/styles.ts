@@ -18,12 +18,13 @@ const SC = {
       }
     `
   ),
-  Button: styled.button<{ backgroundColor: string }>(
-    ({ theme, backgroundColor }) => css`
+  Button: styled.button<{ backgroundColor: string; isActive: boolean }>(
+    ({ isActive, backgroundColor }) => css`
       background-color: ${backgroundColor};
       width: 20px;
       height: 20px;
       border-radius: 50%;
+      border-color: ${isActive ? "red" : "white"};
     `
   ),
 };

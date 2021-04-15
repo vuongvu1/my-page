@@ -10,7 +10,7 @@ const Colors = {
 };
 
 export default function DrawBoard() {
-  const [color, setColor] = useState(Colors.GREEN);
+  const [selectedColor, setColor] = useState(Colors.GREEN);
   const canvasRef = useRef();
   const isDrawing = useRef<boolean>();
 
@@ -23,11 +23,11 @@ export default function DrawBoard() {
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
 
-        ctx.fillStyle = color;
+        ctx.fillStyle = selectedColor;
         ctx.fillRect(x, y, 4, 4);
       }
     },
-    [color]
+    [selectedColor]
   );
 
   const assignRef = useCallback(
@@ -60,14 +60,15 @@ export default function DrawBoard() {
 
   return (
     <div>
-      <SC.Canvas ref={assignRef} width="600" height="600" />
+      <SC.Canvas ref={assignRef} width="400" height="400" />
       <SC.ButtonWrapper>
         <button onClick={clear}>clear</button>
-        {Object.values(Colors).map((clr) => (
+        {Object.values(Colors).map((color) => (
           <SC.Button
-            key={clr}
-            backgroundColor={clr}
-            onClick={() => setColor(clr)}
+            isActive={color === selectedColor}
+            key={color}
+            backgroundColor={color}
+            onClick={() => setColor(color)}
           />
         ))}
       </SC.ButtonWrapper>
