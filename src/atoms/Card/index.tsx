@@ -34,7 +34,7 @@ const Image: FC<Props> = ({
 
   return (
     <SC.Wrapper bgColor={bgColor}>
-      <img src={imgSrc} alt={alt || title} />
+      <img loading="lazy" src={imgSrc} alt={alt || title} />
       <SC.Content>
         <Text type="h3">
           <Link

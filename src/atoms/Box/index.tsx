@@ -14,7 +14,7 @@ const Box: FC<Props> = ({ title, items }) => {
       <SC.Body>
         {items.map(({ logo, name }) => (
           <SC.Item key={name}>
-            <img src={logo} alt={name} />
+            <img loading="lazy" src={logo} alt={name} />
             <Text type="body">{name}</Text>
           </SC.Item>
         ))}

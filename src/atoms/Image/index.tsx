@@ -11,7 +11,7 @@ const Image: FC<Props> = ({ src, alt, type = 1 }) => {
   return (
     <SC.Wrapper>
       <SC.Border type={type}>
-        <img src={src} alt={alt || "image"} />
+        <img loading="lazy" src={src} alt={alt || "image"} />
       </SC.Border>
     </SC.Wrapper>
   );

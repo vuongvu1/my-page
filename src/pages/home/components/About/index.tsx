@@ -21,6 +21,7 @@ const About = () => {
               rel="noreferrer"
             >
               <img
+                loading="lazy"
                 src="https://stackoverflow.com/users/flair/10649754.png"
                 width="208"
                 height="58"
