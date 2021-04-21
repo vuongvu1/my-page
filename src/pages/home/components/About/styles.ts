@@ -4,7 +4,6 @@ import { mediaQueries } from "globalStyles";
 const SC = {
   Wrapper: styled.div(
     ({ theme }) => css`
-      min-height: 90vh;
       color: ${theme.palette.primary.main};
       display: grid;
 

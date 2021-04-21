@@ -5,6 +5,7 @@ const SC = {
     ({ theme }) => css`
       background-color: ${theme.palette.common.white};
       height: calc(100vh - 135px);
+      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
