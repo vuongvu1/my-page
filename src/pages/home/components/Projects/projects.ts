@@ -3,6 +3,7 @@ import passgowhere from "assets/images/passgowhere.webp";
 import til from "assets/images/today-i-learned.webp";
 import myPage from "assets/images/my-page.webp";
 import reacteasylocalization from "assets/images/react-easy-localization.webp";
+import reactPopoverLite from "assets/images/react-popover-lite.webp";
 import ea from "assets/images/ea.webp";
 import dls from "assets/images/dls.webp";
 import eaProjectDetail from "assets/images/ea";
@@ -66,6 +67,15 @@ const projects = [
     githubUrl: "https://github.com/vuongvu1/my-page",
     desc:
       "This is my personal page which should have all information about me.",
+  },
+  {
+    imgSrc: reactPopoverLite,
+    title: "react-popover-lite",
+    url: "https://www.npmjs.com/package/react-popover-lite",
+    techStack: ["React", "TypeScript"],
+    githubUrl: "https://github.com/vuongvu1/react-popover-lite",
+    desc:
+      "A simple popover React higher-order component with zero dependencies, TypeScript support.",
   },
 ];
 
