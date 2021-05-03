@@ -1,7 +1,7 @@
 import { ElementType } from "react";
 import DigitalClock from "./components/DigitalClock";
 import Carousel from "./components/3DCarousel";
-import Snake from "./components/Snake";
+import SnakeGame from "./components/SnakeGame";
 import DrawBoard from "./components/DrawBoard";
 
 export type TabProps = {
@@ -27,9 +27,9 @@ const tabsData: Array<TabProps> = [
     component: DrawBoard,
   },
   {
-    name: "Snake",
-    key: "snake",
-    component: Snake,
+    name: "Snake Game",
+    key: "snake-game",
+    component: SnakeGame,
   },
 ];
 
