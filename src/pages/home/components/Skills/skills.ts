@@ -7,6 +7,7 @@ import react from "assets/images/react.webp";
 import javascript from "assets/images/javascript.webp";
 import typescript from "assets/images/typescript.webp";
 import docker from "assets/images/docker.webp";
+import graphql from "assets/images/graphql.webp";
 
 const skills = [
   {
@@ -22,6 +23,7 @@ const skills = [
       { logo: react, name: "React" },
       { logo: redux, name: "Redux" },
       { logo: reactnative, name: "React Native" },
+      { logo: graphql, name: "GraphQL" },
       { logo: nodejs, name: "Nodejs" },
     ],
   },
