@@ -11,6 +11,10 @@ export const theme: DefaultTheme = {
       light: "#EFEFEF",
       boxShadowColor: "4px 4px 10px #F64C72",
       hover: "#F64C72",
+      success: "#007E33",
+      warning: "#FF8800",
+      error: "#CC0000",
+      info: "#0099CC",
     },
     primary: {
       main: "#014421",

@@ -3,6 +3,7 @@ import DigitalClock from "./components/DigitalClock";
 import Carousel from "./components/3DCarousel";
 import SnakeGame from "./components/SnakeGame";
 import DrawBoard from "./components/DrawBoard";
+import QuizGame from "./components/QuizGame";
 
 export type TabProps = {
   name: string;
@@ -30,6 +31,11 @@ const tabsData: Array<TabProps> = [
     name: "Snake Game",
     key: "snake-game",
     component: SnakeGame,
+  },
+  {
+    name: "Quiz Game",
+    key: "quiz-game",
+    component: QuizGame,
   },
 ];
 

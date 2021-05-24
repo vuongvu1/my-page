@@ -11,6 +11,10 @@ declare module "styled-components" {
         light: string;
         boxShadowColor: string;
         hover: string;
+        success: string;
+        warning: string;
+        error: string;
+        info: string;
       };
       primary: {
         main: string;
