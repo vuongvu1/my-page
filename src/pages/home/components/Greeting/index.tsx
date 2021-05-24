@@ -17,7 +17,7 @@ const Greeting = () => {
             </Text>
             <Text type="h3" color={textColor}>
               <SC.NoWrap>
-                <Text color={textColor}>I am a</Text> Front-end Developer
+                <Text color={textColor}>I am a</Text> Frontend Developer
               </SC.NoWrap>
             </Text>
             <Text color={textColor}>

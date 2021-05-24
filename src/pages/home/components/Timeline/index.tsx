@@ -11,7 +11,8 @@ const timeline = [
         <Link href="https://til.vuongvu.me/" target="_blank">
           Today I Learned
         </Link>{" "}
-        website, keep learning and documenting what I've known.
+        website, keep learning and documenting interesting things along my
+        learning journey.
       </>
     ),
   },
@@ -23,8 +24,9 @@ const timeline = [
         <Link href="https://www.2359.co/" target="_blank">
           2359 Media
         </Link>{" "}
-        as a front-end developer and moving to Singapore. Continue using React
-        as a daily tool. Adapt working style with international teammates.
+        as a frontend developer and moved to Singapore. Using React as my main
+        tools along with Typescript, Redux. Adapt working style with
+        international colleagues.
       </>
     ),
   },
@@ -36,9 +38,8 @@ const timeline = [
         <Link href="https://www.codelink.io/" target="_blank">
           CodeLink
         </Link>{" "}
-        as a front-end developer. Worked mostly with React and Redux to built
-        products for oversea customers, some projects required doing pair
-        programming.
+        as a frontend developer. Worked mostly with React and Redux to build and
+        maintain products for European customers.
       </>
     ),
   },
@@ -50,8 +51,8 @@ const timeline = [
         <Link href="https://www.kms-technology.com/" target="_blank">
           KMS Technology
         </Link>{" "}
-        as a fresher. Completed KMS Next (a fresher training program). Also, I
-        got used to coding review, agile working process.
+        as a fresher. Completed KMS Next (a fresher training program). Got used
+        to coding review, agile working process.
       </>
     ),
   },
