@@ -9,17 +9,17 @@ const Contact = () => {
     <Section bgColor={palette.common.light}>
       <SC.Wrapper>
         <Text type="h2">
-          Here's my{" "}
+          You can find my CV{" "}
           <Link
             href="https://docs.google.com/document/d/109tsrH1jxUoQuvOzqbxtb7VrALkgYxdHRbAXVgXLzjs/edit?usp=sharing"
             target="_blank"
             color={palette.primary.main}
           >
-            CV
+            here
           </Link>
           ,
           <br />
-          Or you can find me at:
+          some additional links:
         </Text>
         <SC.Info>
           {contacts.map((contact) => (
