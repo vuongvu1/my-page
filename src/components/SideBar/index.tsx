@@ -1,10 +1,15 @@
-import { FC } from "react";
+import { FC, ElementType } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import queryString from "query-string";
 
 import { Text } from "atoms";
-import { TabProps } from "../../TabsData";
 import SC, { Menu } from "./styles";
+
+export type TabProps = {
+  name: string;
+  key: string;
+  component: ElementType;
+};
 
 type SideBarProps = {
   allTabs: Array<TabProps>;

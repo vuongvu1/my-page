@@ -5,7 +5,6 @@ import queryString from "query-string";
 
 import { Section } from "atoms";
 import { SideBar } from "components";
-import { useScreen } from "utils/hooks";
 import SC from "./styles";
 import TabsData from "./TabsData";
 
@@ -13,7 +12,6 @@ const Playground = () => {
   const { palette } = useTheme();
   const [activeTab, setActiveTab] = useState(TabsData[0]);
   const { search } = useLocation();
-  const { isLarge: isScreenBig } = useScreen();
 
   const ActiveComponent = activeTab.component;
 
@@ -27,19 +25,11 @@ const Playground = () => {
 
   return (
     <Section bgColor={palette.common.light}>
-      {isScreenBig ? (
-        <>
-          <SideBar allTabs={TabsData} activeTab={activeTab.key} />
-          <SC.Wrapper>
-            <SC.Title>{activeTab.name}</SC.Title>
-            <ActiveComponent />
-          </SC.Wrapper>
-        </>
-      ) : (
-        <SC.Wrapper>
-          <div>This page doesn't support mobile view 😞</div>
-        </SC.Wrapper>
-      )}
+      <SideBar allTabs={TabsData} activeTab={activeTab.key} />
+      <SC.Wrapper>
+        <SC.Title>{activeTab.name}</SC.Title>
+        <ActiveComponent />
+      </SC.Wrapper>
     </Section>
   );
 };

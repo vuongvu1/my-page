@@ -22,6 +22,11 @@ const Links = ({ onClick }: { onClick?: () => void }) => {
         </a>
       </SC.Item>
       <SC.Item onClick={onClick}>
+        <Link to="/hobbies">
+          <Text color={palette.primary.contrastText}>Hobbies</Text>
+        </Link>
+      </SC.Item>
+      <SC.Item onClick={onClick}>
         <Link to="/playground">
           <Text color={palette.primary.contrastText}>Playground</Text>
         </Link>

@@ -4,7 +4,8 @@ const SC = {
   Wrapper: styled.div(
     ({ theme }) => css`
       background-color: ${theme.palette.common.white};
-      height: calc(100vh - 135px);
+      min-height: calc(100vh - 135px);
+      padding: 80px ${theme.spacing.lg};
       display: grid;
       place-items: center;
       position: relative;
