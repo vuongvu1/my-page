@@ -3,6 +3,10 @@ import Song from "./Song";
 
 const songList = [
   {
+    title: "Sky Clearing Up - Tenki no Ko/ Weathering With You",
+    url: "https://www.youtube.com/embed/y51EtHI2ctw",
+  },
+  {
     title: "Always With Me - Spirited Away",
     url: "https://www.youtube.com/embed/ZsRg9NgKR40",
   },
