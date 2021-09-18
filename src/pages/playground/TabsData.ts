@@ -4,6 +4,7 @@ import Carousel from "./components/3DCarousel";
 import SnakeGame from "./components/SnakeGame";
 import DrawBoard from "./components/DrawBoard";
 import QuizGame from "./components/QuizGame";
+import ParallaxEffect from "./components/ParallaxEffect";
 
 const tabsData: Array<TabProps> = [
   {
@@ -30,6 +31,11 @@ const tabsData: Array<TabProps> = [
     name: "Quiz Template",
     key: "quiz-template",
     component: QuizGame,
+  },
+  {
+    name: "Parallax Effect",
+    key: "parallax-effect",
+    component: ParallaxEffect,
   },
 ];
 
