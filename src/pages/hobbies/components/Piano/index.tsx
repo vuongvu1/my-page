@@ -1,3 +1,4 @@
+import { Accordion } from "components";
 import SC from "./styles";
 import Song from "./Song";
 
@@ -17,11 +18,14 @@ const songList = [
 ];
 
 const Piano = () => {
+  const data = songList.map((props) => ({
+    title: props.title,
+    content: <Song key={props.title} {...props} />,
+  }));
+
   return (
     <SC.Wrapper>
-      {songList.map((props) => (
-        <Song key={props.title} {...props} />
-      ))}
+      <Accordion data={data} />
     </SC.Wrapper>
   );
 };
