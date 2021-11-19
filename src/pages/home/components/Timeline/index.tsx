@@ -4,15 +4,14 @@ import SC from "./styles";
 
 const timeline = [
   {
-    title: "Mar 2021",
+    title: "Dec 2021",
     description: (
       <>
-        Created{" "}
-        <Link href="https://til.vuongvu.me/" target="_blank">
-          Today I Learned
+        Joined{" "}
+        <Link href="https://www.deliveryhero.com/" target="_blank">
+          Delivery Hero
         </Link>{" "}
-        website, keep learning and documenting interesting things along my
-        learning journey.
+        as a frontend developer and moved to Berlin, Germany.
       </>
     ),
   },
@@ -24,8 +23,8 @@ const timeline = [
         <Link href="https://www.2359.co/" target="_blank">
           2359 Media
         </Link>{" "}
-        as a frontend developer and moved to Singapore. Using React as my main
-        tools along with Typescript, Redux. Adapt working style with
+        as a frontend developer and moved to Singapore. Used React as the main
+        tool along with Typescript, Redux. Adapt working style with
         international colleagues.
       </>
     ),
@@ -51,8 +50,8 @@ const timeline = [
         <Link href="https://www.kms-technology.com/" target="_blank">
           KMS Technology
         </Link>{" "}
-        as a fresher. Completed KMS Next (a fresher training program). Got used
-        to coding review, agile working process.
+        as a fresher engineer. Completed KMS Next fresher training program. Got
+        used to coding review, agile working process.
       </>
     ),
   },
@@ -64,7 +63,7 @@ const timeline = [
         <Link href="https://www.hcmut.edu.vn/en" target="_blank">
           HCM University of Technology
         </Link>{" "}
-        with a Bachelor's Degree (Honor program), major in Computer Engineering.
+        with an Honor Bachelor's Degree, majoring in Computer Engineering.
       </>
     ),
   },

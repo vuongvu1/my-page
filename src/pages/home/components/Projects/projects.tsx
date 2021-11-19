@@ -58,14 +58,6 @@ const projects = [
     desc: "A place I share what I've learned, to keep notes, and look up to when necessary.",
   },
   {
-    imgSrc: myPage,
-    title: "My Page",
-    url: "https://vuongvu.me/",
-    techStack: ["React", "TypeScript"],
-    githubUrl: "https://github.com/vuongvu1/my-page",
-    desc: "This is my personal page which should have all information about me.",
-  },
-  {
     imgSrc: reactPopoverLite,
     title: "react-popover-lite",
     url: "https://www.npmjs.com/package/react-popover-lite",
