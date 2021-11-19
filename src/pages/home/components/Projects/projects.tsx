@@ -2,7 +2,6 @@ import { Link } from "atoms";
 import wiretap from "assets/images/wiretap.webp";
 import passgowhere from "assets/images/passgowhere.webp";
 import til from "assets/images/today-i-learned.webp";
-import myPage from "assets/images/my-page.webp";
 import reacteasylocalization from "assets/images/react-easy-localization.webp";
 import reactPopoverLite from "assets/images/react-popover-lite.webp";
 import ea from "assets/images/ea.webp";
