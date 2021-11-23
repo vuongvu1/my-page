@@ -33,7 +33,9 @@ const Links = ({ onClick }: { onClick?: () => void }) => {
       </SC.Item>
       <SC.Item onClick={onClick}>
         <Link to="/contact">
-          <Text color={palette.primary.contrastText}>Contact</Text>
+          <Text bold color={palette.primary.contrastText}>
+            Contact
+          </Text>
         </Link>
       </SC.Item>
     </>

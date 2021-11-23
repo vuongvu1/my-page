@@ -17,7 +17,7 @@ const Accordion: FC<Props> = ({ data }) => {
   return (
     <SC.Wrapper>
       {data.map(({ title, content }, index) => (
-        <SC.Item key="title">
+        <SC.Item key={title}>
           <SC.Title onClick={() => handleOnClick(index)}>{title}</SC.Title>
           {active === index && <SC.Content>{content}</SC.Content>}
         </SC.Item>

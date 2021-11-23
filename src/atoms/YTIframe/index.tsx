@@ -6,9 +6,9 @@ type Props = {
   url: string;
 };
 
-const Song: FC<Props> = ({ title, url }) => {
+const YTIframe: FC<Props> = ({ title, url }) => {
   return (
-    <SC.SongWrapper>
+    <SC.VideoWrapper>
       <SC.IFrameWrapper>
         <SC.IFrame
           max-width="1280"
@@ -18,9 +18,9 @@ const Song: FC<Props> = ({ title, url }) => {
           frameBorder="0"
         />
       </SC.IFrameWrapper>
-      <SC.SongTitle>{title}</SC.SongTitle>
-    </SC.SongWrapper>
+      <SC.VideoTitle>{title}</SC.VideoTitle>
+    </SC.VideoWrapper>
   );
 };
 
-export default Song;
+export default YTIframe;

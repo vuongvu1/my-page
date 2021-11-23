@@ -5,13 +5,20 @@ import { TextType } from "./index";
 type WrapperProps = {
   type?: TextType;
   color?: string;
+  bold?: boolean;
 };
 
 type getFontSizeType = WrapperProps & {
   theme: DefaultTheme;
 };
 
-const getStyles = ({ theme, type, color }: getFontSizeType) => {
+const getStyles = ({ theme, type, color, bold }: getFontSizeType) => {
+  const common = bold
+    ? css`
+        font-family: "LatoBold";
+      `
+    : ``;
+
   switch (type) {
     case "h1":
       return css`
@@ -22,6 +29,7 @@ const getStyles = ({ theme, type, color }: getFontSizeType) => {
         ${mediaQueries("md")`
           font-size: ${theme.fontSize.xlg};
         `}
+        ${common};
       `;
     case "h2":
       return css`
@@ -32,6 +40,7 @@ const getStyles = ({ theme, type, color }: getFontSizeType) => {
         ${mediaQueries("md")`
           font-size: ${theme.fontSize.lg};
         `}
+        ${common};
       `;
     case "h3":
       return css`
@@ -42,6 +51,7 @@ const getStyles = ({ theme, type, color }: getFontSizeType) => {
         ${mediaQueries("md")`
           font-size: ${theme.fontSize.md};
         `}
+        ${common};
       `;
     default:
       return css`
@@ -52,6 +62,7 @@ const getStyles = ({ theme, type, color }: getFontSizeType) => {
         ${mediaQueries("md")`
           font-size: ${theme.fontSize.md};
         `}
+        ${common};
       `;
   }
 };

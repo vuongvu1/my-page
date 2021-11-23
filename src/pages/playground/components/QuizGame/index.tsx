@@ -1,7 +1,6 @@
 import { FC, useState } from "react";
 import { Text } from "atoms";
 import SC from "./styles";
-import { getReward } from "./utils";
 
 const answers = [
   {
@@ -79,17 +78,6 @@ export default function QuizGame() {
 
   return (
     <SC.Wrapper>
-      <SC.InfoBoard>
-        <div>
-          <strong>Reward:</strong> {getReward(num)}
-        </div>
-        <div>
-          <strong>Question:</strong> {num + 1}/15
-        </div>
-        <div>
-          <strong>Updated:</strong> {new Date().toUTCString()}
-        </div>
-      </SC.InfoBoard>
       <Text>Quiz {currentQuiz.no}:</Text>
       <Title>{currentQuiz.title}</Title>
       {currentQuiz.answers.map(({ content, letter, isCorrect }, index) => (

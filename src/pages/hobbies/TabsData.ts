@@ -1,6 +1,6 @@
 import { ElementType } from "react";
 import Piano from "./components/Piano";
-import Exercise from "./components/Exercise";
+import VideoEdit from "./components/VideoEdit";
 
 export type TabProps = {
   name: string;
@@ -15,9 +15,9 @@ const tabsData: Array<TabProps> = [
     component: Piano,
   },
   {
-    name: "Exercise",
-    key: "exercise",
-    component: Exercise,
+    name: "Video Edit",
+    key: "video-edit",
+    component: VideoEdit,
   },
 ];
 

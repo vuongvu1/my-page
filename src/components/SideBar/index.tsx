@@ -43,7 +43,7 @@ const SideBar: FC<SideBarProps> = ({ allTabs, activeTab }) => {
   return (
     <SC.Wrapper>
       <Menu>
-        <Text>Menu</Text>
+        <Text bold>Menu</Text>
       </Menu>
       {allTabs.map(({ key, name }) => (
         <Item

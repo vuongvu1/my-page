@@ -1,6 +1,7 @@
+import { YTIframe } from "atoms";
 import { Accordion } from "components";
 import SC from "./styles";
-import Song from "./Song";
+// import Song from "./Song";
 
 const songList = [
   {
@@ -20,7 +21,7 @@ const songList = [
 const Piano = () => {
   const data = songList.map((props) => ({
     title: props.title,
-    content: <Song key={props.title} {...props} />,
+    content: <YTIframe key={props.title} {...props} />,
   }));
 
   return (

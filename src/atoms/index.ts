@@ -7,3 +7,4 @@ export { default as ProgressSegment } from "./ProgressSegment";
 export { default as Link } from "./Link";
 export { default as Modal } from "./Modal";
 export { default as Slider } from "./Slider";
+export { default as YTIframe } from "./YTIframe";
