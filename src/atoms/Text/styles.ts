@@ -17,7 +17,7 @@ const getStyles = ({ theme, type, color }: getFontSizeType) => {
       return css`
         color: ${color || theme.palette.primary.main};
         font-size: ${theme.fontSize.lg};
-        font-family: "UbuntuMonoBold";
+        font-family: "LatoBold";
         margin: ${theme.spacing.md} 0;
         ${mediaQueries("md")`
           font-size: ${theme.fontSize.xlg};
@@ -27,7 +27,7 @@ const getStyles = ({ theme, type, color }: getFontSizeType) => {
       return css`
         color: ${color || theme.palette.primary.main};
         font-size: ${theme.fontSize.md};
-        font-family: "UbuntuMonoBold";
+        font-family: "LatoBold";
         margin: ${theme.spacing.md} 0;
         ${mediaQueries("md")`
           font-size: ${theme.fontSize.lg};
@@ -37,7 +37,7 @@ const getStyles = ({ theme, type, color }: getFontSizeType) => {
       return css`
         color: ${color || theme.palette.primary.main};
         font-size: ${theme.fontSize.sm};
-        font-family: "UbuntuMonoBold";
+        font-family: "LatoBold";
         margin: ${theme.spacing.sm} 0;
         ${mediaQueries("md")`
           font-size: ${theme.fontSize.md};
@@ -47,7 +47,7 @@ const getStyles = ({ theme, type, color }: getFontSizeType) => {
       return css`
         color: ${color || theme.palette.primary.main};
         font-size: ${theme.fontSize.sm};
-        font-family: "UbuntuMonoRegular";
+        font-family: "LatoRegular";
         margin: ${theme.spacing.sm} 0;
         ${mediaQueries("md")`
           font-size: ${theme.fontSize.md};

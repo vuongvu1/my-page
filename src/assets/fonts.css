@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "UbuntuMonoRegular";
+  font-family: "LatoRegular";
   font-display: swap;
-  src: url("./fonts/UbuntuMono-Regular.ttf") format("truetype");
+  src: url("./fonts/Lato-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "UbuntuMonoBold";
+  font-family: "LatoBold";
   font-display: swap;
-  src: url("./fonts/UbuntuMono-Bold.ttf") format("truetype");
+  src: url("./fonts/Lato-Bold.ttf") format("truetype");
 }
