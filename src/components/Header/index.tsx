@@ -17,7 +17,7 @@ const Links = ({ onClick }: { onClick?: () => void }) => {
         </Link>
       </SC.Item>
       <SC.Item onClick={onClick}>
-        <a href="https://til.vuongvu.me/" target="_blank" rel="noreferrer">
+        <a href="https://til-vuongvu.netlify.app/" target="_blank" rel="noreferrer">
           <Text color={palette.primary.contrastText}>Today I Learned</Text>
         </a>
       </SC.Item>
