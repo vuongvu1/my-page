@@ -1,6 +1,6 @@
 # My Personal Page
 
-URL: https://vuongvu.netlify.app/
+URL: https://vuongvu.xyz/
 
 ## Hey there 👋
 
