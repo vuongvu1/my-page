@@ -51,7 +51,7 @@ const projects = [
   {
     imgSrc: til,
     title: "Today I Learned",
-    url: "https://til.vuongvu.me/",
+    url: "https://til.vuongvu.xyz/",
     techStack: ["React", "Gatsby"],
     githubUrl: "https://github.com/vuongvu1/today-i-learned",
     desc: "A place I share what I've learned, to keep notes, and look up to when necessary.",
