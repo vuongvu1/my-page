@@ -6,6 +6,7 @@ import SC from "./styles";
 
 const About = () => {
   const { palette } = useTheme();
+  const currentYear = new Date().getFullYear();
 
   return (
     <Section bgColor={palette.common.light} id="about-section">
@@ -33,11 +34,11 @@ const About = () => {
               About Me
             </Text>
             <Text type="body" color={palette.primary.main}>
-              My name is Vuong Vu, a {new Date().getFullYear() - 1994}-year-old
+              My name is Vuong Vu, a {currentYear - 1994}-year-old
               Frontend Developer from Vietnam, currently living in Berlin - Germany.
             </Text>
             <Text type="body" color={palette.primary.main}>
-              I have 4 years of working professionally, of which 3 years
+              I have {currentYear - 2017} years of working professionally, of which {currentYear - 2019} years
               experience with React.
             </Text>
             <Text type="body" color={palette.primary.main}>
