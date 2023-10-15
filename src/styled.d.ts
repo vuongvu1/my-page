@@ -15,6 +15,7 @@ declare module "styled-components" {
         warning: string;
         error: string;
         info: string;
+        link: string;
       };
       primary: {
         main: string;

@@ -13,11 +13,28 @@ type getFontSizeType = WrapperProps & {
 };
 
 const getStyles = ({ theme, type, color, bold }: getFontSizeType) => {
-  const common = bold
-    ? css`
-        font-family: "LatoBold";
-      `
-    : ``;
+  let common = css`
+    a {
+      color: ${theme.palette.common.link};
+
+      &:link,
+      &:visited {
+        text-decoration: none;
+      }
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  `;
+
+  if (bold) {
+    common = css`
+      ${common};
+      font-family: "LatoBold";
+    `;
+  }
 
   switch (type) {
     case "h1":

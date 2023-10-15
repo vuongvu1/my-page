@@ -15,6 +15,7 @@ export const theme: DefaultTheme = {
       warning: "#FF8800",
       error: "#CC0000",
       info: "#0099CC",
+      link: "#00AEEF",
     },
     primary: {
       main: "#014421",
@@ -66,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    background-color: ${theme.palette.primary.main};
+    background-color: ${(p) => p.theme.palette.primary.main};
     font-family: 'LatoRegular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
