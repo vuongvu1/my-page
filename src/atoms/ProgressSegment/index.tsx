@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { FC, PropsWithChildren, ReactNode } from "react";
 import { useTheme } from "styled-components";
 import { Text } from "atoms";
 import SC from "./styles";
@@ -11,7 +11,7 @@ type Props = {
   isLast?: boolean;
 };
 
-const ProgressSegment: FC<Props> = ({
+const ProgressSegment: FC<PropsWithChildren<Props>> = ({
   title,
   description,
   index,

@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, PropsWithChildren } from "react";
 import SC from "./styles";
 
 type Props = {
@@ -6,7 +6,7 @@ type Props = {
   url: string;
 };
 
-const YTIframe: FC<Props> = ({ title, url }) => {
+const YTIframe: FC<PropsWithChildren<Props>> = ({ title, url }) => {
   return (
     <SC.VideoWrapper>
       <SC.IFrameWrapper>

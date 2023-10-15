@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, PropsWithChildren, useState } from "react";
 import { useTheme } from "styled-components";
 import { Text, Link, Modal, Slider } from "atoms";
 import { Github } from "assets/icons";
@@ -15,7 +15,7 @@ type Props = {
   githubUrl?: string;
 };
 
-const Image: FC<Props> = ({
+const Image: FC<PropsWithChildren<Props>> = ({
   imgSrc,
   alt,
   bgColor,

@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, PropsWithChildren } from "react";
 import SC from "./styles";
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
   type?: 1 | 2;
 };
 
-const Image: FC<Props> = ({ src, alt, type = 1 }) => {
+const Image: FC<PropsWithChildren<Props>> = ({ src, alt, type = 1 }) => {
   return (
     <SC.Wrapper>
       <SC.Border type={type}>

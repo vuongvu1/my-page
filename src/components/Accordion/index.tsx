@@ -1,12 +1,12 @@
-import { ReactChild } from "hoist-non-react-statics/node_modules/@types/react";
-import { useState, FC } from "react";
+import { ReactNode } from "react";
+import { useState, FC, PropsWithChildren } from "react";
 import SC from "./styles";
 
 type Props = {
-  data: Array<{ title: string; content: ReactChild }>;
+  data: Array<{ title: string; content: ReactNode }>;
 };
 
-const Accordion: FC<Props> = ({ data }) => {
+const Accordion: FC<PropsWithChildren<Props>> = ({ data }) => {
   const [active, setActive] = useState<number>(-1);
 
   const handleOnClick = (index: number) => {

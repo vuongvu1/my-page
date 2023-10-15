@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, PropsWithChildren, useState } from "react";
 import { Text } from "atoms";
 import SC from "./styles";
 
@@ -38,7 +38,7 @@ const quizes = [
   },
 ];
 
-const Title: FC = ({ children }) => {
+const Title: FC<PropsWithChildren> = ({ children }) => {
   return (
     <SC.Title>
       <div></div>

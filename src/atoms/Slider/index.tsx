@@ -1,11 +1,11 @@
-import { FC, useState } from "react";
+import { FC, PropsWithChildren, useState } from "react";
 import SC from "./styles";
 
 type Props = {
   content: string[];
 };
 
-const Slider: FC<Props> = ({ content }) => {
+const Slider: FC<PropsWithChildren<Props>> = ({ content }) => {
   const [imgIndex, setImgIndex] = useState(0);
 
   const increase = () =>

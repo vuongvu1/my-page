@@ -11,27 +11,29 @@ const Colors = {
 
 export default function DrawBoard() {
   const [selectedColor, setColor] = useState(Colors.GREEN);
-  const canvasRef = useRef();
+  const canvasRef = useRef<HTMLCanvasElement>();
   const isDrawing = useRef<boolean>();
 
   const draw = useCallback(
-    (canvas, event) => {
+    (canvas: HTMLCanvasElement, event: MouseEvent) => {
       if (isDrawing.current) {
         const rect = canvas.getBoundingClientRect();
-        var ctx = canvas.getContext("2d");
+        const ctx = canvas.getContext("2d");
 
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
 
-        ctx.fillStyle = selectedColor;
-        ctx.fillRect(x, y, 4, 4);
+        if (ctx) {
+          ctx.fillStyle = selectedColor;
+          ctx.fillRect(x, y, 4, 4);
+        }
       }
     },
     [selectedColor]
   );
 
   const assignRef = useCallback(
-    (node) => {
+    (node: HTMLCanvasElement) => {
       if (node) {
         node.addEventListener("mousedown", () => {
           isDrawing.current = true;

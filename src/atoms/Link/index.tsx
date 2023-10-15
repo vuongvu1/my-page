@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, PropsWithChildren } from "react";
 import SC from "./styles";
 
 type Props = {
@@ -8,7 +8,13 @@ type Props = {
   onClick?: () => void;
 };
 
-const Link: FC<Props> = ({ href, color, onClick, target, children }) => {
+const Link: FC<PropsWithChildren<Props>> = ({
+  href,
+  color,
+  onClick,
+  target,
+  children,
+}) => {
   return (
     <SC.Link href={href} color={color} target={target} onClick={onClick}>
       {children}

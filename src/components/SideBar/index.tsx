@@ -1,4 +1,4 @@
-import { FC, ElementType } from "react";
+import { FC, PropsWithChildren, ElementType } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import queryString from "query-string";
 
@@ -21,7 +21,11 @@ type ItemProps = {
   onClick: () => void;
 };
 
-const Item: FC<ItemProps> = ({ children, active, onClick }) => {
+const Item: FC<PropsWithChildren<ItemProps>> = ({
+  children,
+  active,
+  onClick,
+}) => {
   return (
     <SC.Item isActive={active} onClick={onClick}>
       {children}

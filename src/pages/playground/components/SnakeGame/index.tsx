@@ -8,8 +8,9 @@ enum Direction {
   LEFT,
 }
 
-const cordToIndex = ({ x, y }: { x: number; y: number }) =>
-  (y - 1) * 10 + (x - 1);
+type cordType = { x: number; y: number };
+
+const cordToIndex = ({ x, y }: cordType) => (y - 1) * 10 + (x - 1);
 
 export default function App() {
   const [food, setFood] = useState({
@@ -25,7 +26,7 @@ export default function App() {
   const [isLost, setIsLost] = useState(false);
   const [score, setScore] = useState(0);
 
-  const run = useCallback((direction, foodPos) => {
+  const run = useCallback((direction: Direction, foodPos: cordType) => {
     setSnake((currentSnake) => {
       const head = currentSnake[currentSnake.length - 1];
       let newHead = head;

@@ -1,4 +1,4 @@
-import { FC, useEffect } from "react";
+import { FC, PropsWithChildren, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { Close as CloseIcon } from "assets/icons";
 import { useScreen } from "utils/hooks";
@@ -12,7 +12,7 @@ type Props = {
   close: () => void;
 };
 
-const Modal: FC<Props> = ({ visible, close, children }) => {
+const Modal: FC<PropsWithChildren<Props>> = ({ visible, close, children }) => {
   const { isLarge } = useScreen();
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, PropsWithChildren } from "react";
 import { Text } from "atoms";
 import SC from "./styles";
 
@@ -7,7 +7,7 @@ type Props = {
   items: Array<{ logo: string; name: string }>;
 };
 
-const Box: FC<Props> = ({ title, items }) => {
+const Box: FC<PropsWithChildren<Props>> = ({ title, items }) => {
   return (
     <SC.Wrapper>
       <Text type="h3">{title}</Text>
