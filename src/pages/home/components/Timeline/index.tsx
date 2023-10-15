@@ -60,7 +60,7 @@ const timeline = [
     description: (
       <>
         Graduated from{" "}
-        <Link href="https://www.hcmut.edu.vn/en" target="_blank">
+        <Link href="https://hcmut.edu.vn/en" target="_blank">
           HCM University of Technology
         </Link>{" "}
         with an Honor Bachelor's Degree, majoring in Computer Engineering.
