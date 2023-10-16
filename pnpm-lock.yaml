@@ -21,7 +21,7 @@ dependencies:
     specifier: 5.0.1
     version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.15)(eslint@8.51.0)(react@18.2.0)(typescript@4.9.5)
   styled-components:
-    specifier: ^5.2.1
+    specifier: ^5.3.11
     version: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
   typescript:
     specifier: ^4.0.3
