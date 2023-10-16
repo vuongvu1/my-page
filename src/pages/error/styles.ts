@@ -7,7 +7,7 @@ const SC = {
       height: calc(100vh - 135px);
       display: grid;
       place-items: center;
-    `
+    `,
   ),
 };
 

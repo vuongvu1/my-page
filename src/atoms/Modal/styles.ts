@@ -15,7 +15,7 @@ const SC = {
       align-items: center;
       justify-content: center;
       z-index: 99;
-    `
+    `,
   ),
   Wrapper: styled.div<WrapperProps>(
     ({ theme }) => css`
@@ -24,7 +24,7 @@ const SC = {
       min-width: 200px;
       min-height: 200px;
       background-color: transparent;
-    `
+    `,
   ),
   CloseWrapper: styled.div`
     position: absolute;

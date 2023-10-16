@@ -19,7 +19,7 @@ const Block = memo(
         </SC.Number>
       ))}
     </SC.NumberWrapper>
-  )
+  ),
 );
 
 const DigitalClock = () => {

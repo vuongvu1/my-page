@@ -9,7 +9,8 @@ const SC = {
       border: 2px solid ${theme.palette.common.dark};
       background-color: ${theme.palette.common.light};
       border-radius: ${theme.borderRadius};
-      transition: transform ${theme.transitionTime},
+      transition:
+        transform ${theme.transitionTime},
         box-shadow ${theme.transitionTime};
       padding: ${theme.spacing.sm} ${theme.spacing.md};
       text-align: center;
@@ -18,7 +19,7 @@ const SC = {
         box-shadow: ${theme.palette.common.boxShadowColor};
         transform: scale(1.02);
       }
-    `
+    `,
   ),
   Body: styled.div(
     () => css`
@@ -29,7 +30,7 @@ const SC = {
       ${mediaQueries("sm")`
         flex-direction: row;
       `}
-    `
+    `,
   ),
   Item: styled.div(
     ({ theme }) => css`
@@ -38,7 +39,7 @@ const SC = {
         width: 100px;
         height: 100px;
       }
-    `
+    `,
   ),
 };
 

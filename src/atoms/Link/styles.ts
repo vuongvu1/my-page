@@ -11,7 +11,7 @@ const SC = {
       &:hover {
         color: ${theme.palette.common.hover};
       }
-    `
+    `,
   ),
 };
 

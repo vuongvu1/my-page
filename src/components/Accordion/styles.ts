@@ -4,13 +4,13 @@ const SC = {
   Wrapper: styled.div(
     ({ theme }) => css`
       width: 100%;
-    `
+    `,
   ),
   Item: styled.div(
     ({ theme }) => css`
       border-top: 1px solid ${theme.palette.common.light};
       border-bottom: 1px solid ${theme.palette.common.light};
-    `
+    `,
   ),
   Title: styled.button(
     ({ theme }) => css`
@@ -27,13 +27,13 @@ const SC = {
       &:hover {
         background-color: ${theme.palette.common.light};
       }
-    `
+    `,
   ),
   Content: styled.div(
     ({ theme }) => css`
       width: 100%;
       padding: ${theme.spacing.md};
-    `
+    `,
   ),
 };
 

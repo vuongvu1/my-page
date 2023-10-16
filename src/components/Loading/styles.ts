@@ -18,7 +18,7 @@ const SC = {
       justify-content: center;
       align-items: center;
       z-index: 999;
-    `
+    `,
   ),
   Loading: styled.div(
     ({ theme }) => css`
@@ -28,7 +28,7 @@ const SC = {
       width: 120px;
       height: 120px;
       animation: ${rotate} 0.8s linear infinite;
-    `
+    `,
   ),
 };
 

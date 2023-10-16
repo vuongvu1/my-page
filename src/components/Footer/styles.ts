@@ -16,7 +16,7 @@ const SC = {
         text-align: right;
         float: right;
       `}
-    `
+    `,
   ),
 };
 

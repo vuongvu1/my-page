@@ -10,7 +10,7 @@ const SC = {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    `
+    `,
   ),
   Info: styled.div(
     ({ theme }) => css`
@@ -19,7 +19,7 @@ const SC = {
       border: 2px dashed ${theme.palette.primary.main};
       display: grid;
       place-items: center;
-    `
+    `,
   ),
 };
 

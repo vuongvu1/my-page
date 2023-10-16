@@ -7,7 +7,7 @@ const SC = {
       justify-content: center;
       align-items: top;
       flex-direction: column;
-    `
+    `,
   ),
 };
 

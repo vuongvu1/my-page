@@ -10,14 +10,14 @@ const SC = {
       ${mediaQueries("md")`
         grid-template-columns: 1fr 1fr;
       `}
-    `
+    `,
   ),
   Column: styled.div(
     ({ theme }) => css`
       display: grid;
       place-items: center;
       padding: ${theme.spacing.lg};
-    `
+    `,
   ),
   Info: styled.div(
     ({ theme }) => css`
@@ -30,7 +30,7 @@ const SC = {
       img {
         transition: transform 0.3s;
       }
-    `
+    `,
   ),
 };
 

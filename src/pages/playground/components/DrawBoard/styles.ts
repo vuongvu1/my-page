@@ -4,7 +4,7 @@ const SC = {
   Canvas: styled.canvas(
     ({ theme }) => css`
       border: 1px solid black;
-    `
+    `,
   ),
   ButtonWrapper: styled.div(
     ({ theme }) => css`
@@ -16,7 +16,7 @@ const SC = {
       > * {
         margin-left: 10px;
       }
-    `
+    `,
   ),
   Button: styled.button<{ backgroundColor: string; isActive: boolean }>(
     ({ isActive, backgroundColor }) => css`
@@ -25,7 +25,7 @@ const SC = {
       height: 20px;
       border-radius: 50%;
       border-color: ${isActive ? "red" : "white"};
-    `
+    `,
   ),
 };
 

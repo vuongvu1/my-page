@@ -34,12 +34,12 @@ const About = () => {
               About Me
             </Text>
             <Text type="body" color={palette.primary.main}>
-              My name is Vuong Vu, a {currentYear - 1994}-year-old
-              Frontend Developer from Vietnam, currently living in Berlin - Germany.
+              My name is Vuong Vu, a {currentYear - 1994}-year-old Frontend
+              Developer from Vietnam, currently living in Berlin - Germany.
             </Text>
             <Text type="body" color={palette.primary.main}>
-              I have {currentYear - 2017} years of working professionally, of which {currentYear - 2019} years
-              experience with React.
+              I have {currentYear - 2017} years of working professionally, of
+              which {currentYear - 2019} years experience with React.
             </Text>
             <Text type="body" color={palette.primary.main}>
               I love programming and passionate about building applications that

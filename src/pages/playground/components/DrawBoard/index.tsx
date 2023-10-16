@@ -29,7 +29,7 @@ export default function DrawBoard() {
         }
       }
     },
-    [selectedColor]
+    [selectedColor],
   );
 
   const assignRef = useCallback(
@@ -39,7 +39,7 @@ export default function DrawBoard() {
           isDrawing.current = true;
         });
         node.addEventListener("mousemove", (event: MouseEvent) =>
-          draw(node, event)
+          draw(node, event),
         );
         node.addEventListener("mouseup", () => {
           isDrawing.current = false;
@@ -47,7 +47,7 @@ export default function DrawBoard() {
         canvasRef.current = node;
       }
     },
-    [draw]
+    [draw],
   );
 
   const clear = () => {

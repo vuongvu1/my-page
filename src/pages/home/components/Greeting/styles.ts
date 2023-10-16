@@ -11,7 +11,7 @@ const SC = {
       ${mediaQueries("md")`
         grid-template-columns: 1fr 1fr;
       `}
-    `
+    `,
   ),
   Column: styled.div(
     ({ theme }) => css`
@@ -22,7 +22,7 @@ const SC = {
       ${mediaQueries("md")`
         padding: ${theme.spacing.lg};
       `}
-    `
+    `,
   ),
   Info: styled.div(
     ({ theme }) => css`
@@ -31,7 +31,7 @@ const SC = {
       background: rgba(1, 68, 33, 0.8);
       text-shadow: 2px 2px ${theme.palette.primary.main};
       border-radius: ${theme.borderRadius};
-    `
+    `,
   ),
   NoWrap: styled.div`
     white-space: nowrap;

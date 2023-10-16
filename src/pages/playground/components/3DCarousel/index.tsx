@@ -12,7 +12,7 @@ const Carousel = () => {
     const newDeg = dir === "next" ? deg - 60 : deg + 60;
     setDeg(newDeg);
     const carouselElement = document.getElementsByClassName(
-      "carousel"
+      "carousel",
     )[0] as HTMLDivElement;
     carouselElement.style.transform = `rotateY(${newDeg}deg)`;
   };

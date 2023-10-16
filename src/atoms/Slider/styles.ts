@@ -5,7 +5,7 @@ const SC = {
   Wrapper: styled.div(
     ({ theme }) => css`
       position: relative;
-    `
+    `,
   ),
   Image: styled.img<{ visible: boolean }>(
     ({ theme, visible }) => css`
@@ -20,7 +20,7 @@ const SC = {
         position: relative;
         opacity: 1;
       `}
-    `
+    `,
   ),
   Button: styled.button<{ left?: boolean; right?: boolean }>(
     ({ theme, left, right }) => css`
@@ -60,7 +60,7 @@ const SC = {
           right: -60px;
         `}
       `}
-    `
+    `,
   ),
 };
 

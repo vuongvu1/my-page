@@ -11,7 +11,7 @@ const SC = {
       flex-wrap: wrap;
       justify-content: space-between;
       position: relative;
-    `
+    `,
   ),
   Title: styled.div(
     ({ theme }) => css`
@@ -42,7 +42,7 @@ const SC = {
           border-left: 22px solid ${BACKGROUND_COLOR};
         }
       }
-    `
+    `,
   ),
   Answer: styled.div<{
     isSelected: boolean;
@@ -135,12 +135,12 @@ const SC = {
           }
         }
       `}
-    `
+    `,
   ),
   AnswerLetter: styled.span(
     ({ theme }) => css`
       color: ${theme.palette.common.hover};
-    `
+    `,
   ),
   ConfirmWrapper: styled.div<{ isDisabled: boolean }>(
     ({ theme, isDisabled }) => css`
@@ -168,7 +168,7 @@ const SC = {
           background-color: ${theme.palette.common.dark};
         `}
       }
-    `
+    `,
   ),
   InfoBoard: styled.div(
     ({ theme }) => css`
@@ -178,7 +178,7 @@ const SC = {
       padding: ${theme.spacing.sm} ${theme.spacing.md};
       border: 0 solid ${theme.palette.common.success};
       border-left-width: 4px;
-    `
+    `,
   ),
 };
 

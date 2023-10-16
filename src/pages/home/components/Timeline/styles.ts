@@ -9,7 +9,7 @@ const SC = {
       place-items: start center;
       grid-template-rows: 120px auto;
       padding: ${theme.spacing.lg};
-    `
+    `,
   ),
   Body: styled.div(
     ({ theme }) => css`
@@ -21,7 +21,7 @@ const SC = {
         width: 60%;
         padding: 0;
       `}
-    `
+    `,
   ),
 };
 

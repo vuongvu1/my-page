@@ -18,7 +18,7 @@ const SC = {
       css`
         top: -80px;
       `}
-    `
+    `,
   ),
   Items: styled.ul(
     ({ theme }) => css`
@@ -33,7 +33,7 @@ const SC = {
         align-items: center;
         justify-content: space-around;
       `}
-    `
+    `,
   ),
   Item: styled.li(
     ({ theme }) => css`
@@ -52,7 +52,7 @@ const SC = {
           }
         }
       }
-    `
+    `,
   ),
   MobileWrapper: styled.div(
     ({ theme }) => css`
@@ -80,12 +80,12 @@ const SC = {
       > * {
         margin-bottom: 20px;
       }
-    `
+    `,
   ),
   CloseWrapper: styled.div(
     ({ theme }) => css`
       align-self: flex-end;
-    `
+    `,
   ),
 };
 

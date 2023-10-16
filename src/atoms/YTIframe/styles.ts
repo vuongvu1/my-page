@@ -6,7 +6,7 @@ const SC = {
       display: grid;
       place-items: center;
       margin-bottom: ${theme.spacing.lg};
-    `
+    `,
   ),
   IFrameWrapper: styled.div(
     ({ theme }) => css`
@@ -14,13 +14,13 @@ const SC = {
       max-width: 865px;
       padding-top: 56.25%;
       position: relative;
-    `
+    `,
   ),
   VideoTitle: styled.h2(
     ({ theme }) => css`
       font-size: ${theme.fontSize.md};
       font-weight: ${theme.fontSize.lg};
-    `
+    `,
   ),
   IFrame: styled.iframe(
     ({ theme }) => css`
@@ -29,7 +29,7 @@ const SC = {
       left: 0;
       width: 100%;
       height: 100%;
-    `
+    `,
   ),
 };
 

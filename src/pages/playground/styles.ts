@@ -9,7 +9,7 @@ const SC = {
       place-items: center;
       position: relative;
       overflow: hidden;
-    `
+    `,
   ),
   Title: styled.h1(
     ({ theme }) => css`
@@ -19,7 +19,7 @@ const SC = {
       left: ${theme.spacing.lg};
       font-size: ${theme.fontSize.lg};
       font-weight: ${theme.fontSize.lg};
-    `
+    `,
   ),
 };
 

@@ -25,13 +25,13 @@ const SC = {
           background-attachment: fixed;
         `}
       `}
-    `
+    `,
   ),
   Content: styled.div(
     ({ theme }) => css`
       width: 100%;
       max-width: ${theme.breakpoint.lg};
-    `
+    `,
   ),
 };
 

@@ -57,7 +57,7 @@ export default function App() {
       }
 
       const isEatingYourself = currentSnake.some(
-        (part) => cordToIndex(part) === cordToIndex(newHead)
+        (part) => cordToIndex(part) === cordToIndex(newHead),
       );
 
       if (isEatingYourself) {

@@ -28,7 +28,7 @@ export const Box = styled.div<{ isActive: boolean; isFood: boolean }>(
     css`
       background-color: ${theme.palette.primary.main};
     `}
-  `
+  `,
 );
 
 export const Score = styled.div`

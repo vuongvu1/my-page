@@ -7,12 +7,12 @@ const SC = {
       place-items: start center;
       grid-template-rows: 120px auto;
       padding: ${theme.spacing.lg};
-    `
+    `,
   ),
   Title: styled.div(
     ({ theme }) => css`
       text-shadow: 2px 2px ${theme.palette.primary.main};
-    `
+    `,
   ),
   Body: styled.div(
     ({ theme }) => css`
@@ -23,7 +23,7 @@ const SC = {
       > * {
         margin: ${theme.spacing.sm};
       }
-    `
+    `,
   ),
 };
 

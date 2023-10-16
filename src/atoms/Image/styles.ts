@@ -10,14 +10,15 @@ const Wrapper = styled.div(
     padding: ${theme.spacing.lg};
     display: grid;
     place-items: center;
-  `
+  `,
 );
 
 const Border = styled.div<BorderType>(
   ({ theme, type }) => css`
     max-width: 340px;
     border-radius: ${theme.borderRadius};
-    transition: transform ${theme.transitionTime},
+    transition:
+      transform ${theme.transitionTime},
       border-width ${theme.transitionTime};
     > img {
       width: 100%;
@@ -43,7 +44,7 @@ const Border = styled.div<BorderType>(
         }
       `}
     `}
-  `
+  `,
 );
 
 const SC = {

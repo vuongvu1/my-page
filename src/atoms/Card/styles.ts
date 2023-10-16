@@ -9,7 +9,8 @@ const SC = {
     ({ theme, bgColor }) => css`
       background-color: ${bgColor || theme.palette.common.light};
       border-radius: ${theme.borderRadius};
-      transition: transform ${theme.transitionTime},
+      transition:
+        transform ${theme.transitionTime},
         box-shadow ${theme.transitionTime};
 
       > img {
@@ -21,12 +22,12 @@ const SC = {
         box-shadow: ${theme.palette.common.boxShadowColor};
         transform: scale(1.04);
       }
-    `
+    `,
   ),
   Content: styled.div(
     ({ theme }) => css`
       padding: ${theme.spacing.sm} ${theme.spacing.md};
-    `
+    `,
   ),
 };
 

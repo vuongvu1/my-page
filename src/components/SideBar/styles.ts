@@ -7,7 +7,7 @@ export const Menu = styled.div(
     justify-content: flex-end;
     padding-right: 0;
     font-weight: bold;
-  `
+  `,
 );
 
 const SC = {
@@ -28,13 +28,15 @@ const SC = {
           padding-right: 80px;
         }
       }
-    `
+    `,
   ),
   Item: styled.div<{ isActive: boolean }>(
     ({ theme, isActive }) => css`
       padding: ${theme.spacing.sm} ${theme.spacing.lg};
       padding-left: 80px;
-      transition: transform 0.3s, background-color 0.3s;
+      transition:
+        transform 0.3s,
+        background-color 0.3s;
       border: 1px solid ${theme.palette.primary.main};
       border-left: none;
       background-color: ${theme.palette.common.white};
@@ -50,7 +52,7 @@ const SC = {
       &:hover {
         transform: translate(15%, 0);
       }
-    `
+    `,
   ),
 };
 

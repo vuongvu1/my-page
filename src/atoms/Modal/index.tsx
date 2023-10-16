@@ -36,7 +36,7 @@ const Modal: FC<PropsWithChildren<Props>> = ({ visible, close, children }) => {
         {children}
       </SC.Wrapper>
     </SC.Background>,
-    modalRoot
+    modalRoot,
   );
 };
 

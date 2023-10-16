@@ -64,7 +64,9 @@
   border-radius: 5px;
   border-top: 1px solid #fff;
   box-shadow: 0 5px 0 #999;
-  transition: box-shadow 0.1s, top 0.1s;
+  transition:
+    box-shadow 0.1s,
+    top 0.1s;
 }
 .next:hover,
 .prev:hover {

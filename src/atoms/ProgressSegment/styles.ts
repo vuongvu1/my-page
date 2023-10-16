@@ -59,7 +59,7 @@ const Wrapper = styled.div<WrapperProps>(
     css`
       border-bottom-left-radius: 0;
     `}
-  `
+  `,
 );
 
 const Index = styled.div(
@@ -76,7 +76,7 @@ const Index = styled.div(
     display: flex;
     justify-content: center;
     align-items: center;
-  `
+  `,
 );
 
 const SC = {
