@@ -57,5 +57,11 @@
     "@types/react-router-dom": "^5.1.6",
     "@types/styled-components": "^5.1.7",
     "pre-commit": "^1.2.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "nth-check@<2.0.1": ">=2.0.1",
+      "postcss@<8.4.31": ">=8.4.31"
+    }
   }
 }
