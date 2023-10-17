@@ -35,7 +35,7 @@ const About = () => {
             </Text>
             <Text type="body" color={palette.primary.main}>
               My name is Vuong Vu, a {currentYear - 1994}-year-old Frontend
-              Developer from Vietnam, currently living in Berlin - Germany.
+              Developer from Vietnam, currently living in Berlin, Germany.
             </Text>
             <Text type="body" color={palette.primary.main}>
               I have {currentYear - 2017} years of working professionally, of

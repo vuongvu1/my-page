@@ -4,8 +4,8 @@ URL: https://vuongvu.xyz/
 
 ## Hey there 👋
 
-I'm Vuong Vu, a Front End developer working professionally for approximately 4 years.
+I'm Vuong Vu, a Front End developer from Vietnam, now based in Berlin.
 
-This is my personal page which is having all information about me.
+Welcome to my personal page, where you can find all the information about me.
 
-Nice to see you here ♥️
+I'm delighted to have you here! ♥️
