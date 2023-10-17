@@ -6,7 +6,7 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import { Header, Footer, Loading } from "components";
+import { Header, Footer, Loading, Body } from "components";
 const HomePage = lazy(() => import("pages/home"));
 const ContactPage = lazy(() => import("pages/contact"));
 const PlaygroundPage = lazy(() => import("pages/playground"));
@@ -16,7 +16,7 @@ const ErrorPage = lazy(() => import("pages/error"));
 const App = () => {
   return (
     <Router>
-      <>
+      <Body>
         <Header />
         <Suspense fallback={<Loading />}>
           <Switch>
@@ -29,7 +29,7 @@ const App = () => {
           </Switch>
         </Suspense>
         <Footer />
-      </>
+      </Body>
     </Router>
   );
 };
