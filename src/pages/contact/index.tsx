@@ -11,7 +11,7 @@ const Contact = () => {
         <Text type="h2">
           You can find my CV{" "}
           <Link
-            href="https://docs.google.com/document/d/109tsrH1jxUoQuvOzqbxtb7VrALkgYxdHRbAXVgXLzjs/edit?usp=sharing"
+            href="https://vuongvu.notion.site/Vu-Hoang-Vuong-3557387de32a4b8784f00c0134a61d6d"
             target="_blank"
             color={palette.primary.main}
           >
