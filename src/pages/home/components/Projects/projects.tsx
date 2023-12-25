@@ -13,26 +13,11 @@ import gieProjectDetail from "assets/images/gie";
 
 const projects = [
   {
-    imgSrc: wiretap,
-    title: "Wiretap for Chrome",
-    url: "https://wiretap.co/",
-    techStack: ["React", "Redux", "Node.js"],
-    desc: "A Chrome extension that lets users comment, share, socialize... while using Netflix.",
-  },
-  {
     imgSrc: ea,
     title: "EA Creative Hub",
     modalContent: eaProjectDetail,
     techStack: ["React", "Redux", "Nuxeo"],
     desc: "An internal Content Management System made for EA products.",
-  },
-  {
-    imgSrc: reacteasylocalization,
-    title: "react-easy-localization",
-    url: "https://www.npmjs.com/package/react-easy-localization",
-    techStack: ["JavaScript", "Babel"],
-    githubUrl: "https://github.com/vuongvu1/react-easy-localization",
-    desc: "A simple Node module that helps React applications to implement language internalization easily.",
   },
   {
     imgSrc: dls,
@@ -47,6 +32,21 @@ const projects = [
     url: "https://pass.gowhere.gov.sg/",
     techStack: ["React", "TypeScript", "Tailwind"],
     desc: "A web application that allows Singapore foreign workers to apply for an Exit Pass to go outside of their dormitories with some specific timeslots, in order to control the spread of COVID-19.",
+  },
+  {
+    imgSrc: wiretap,
+    title: "Wiretap for Chrome",
+    url: "https://blog.wiretap.co/",
+    techStack: ["React", "Redux", "Node.js"],
+    desc: "A Chrome extension that lets users comment, share, socialize... while using Netflix.",
+  },
+  {
+    imgSrc: reacteasylocalization,
+    title: "react-easy-localization",
+    url: "https://www.npmjs.com/package/react-easy-localization",
+    techStack: ["JavaScript", "Babel"],
+    githubUrl: "https://github.com/vuongvu1/react-easy-localization",
+    desc: "A simple Node module that helps React applications to implement language internalization easily.",
   },
   {
     imgSrc: til,
@@ -78,7 +78,7 @@ const projects = [
           target="_blank"
           color="#014421"
         >
-          GitHub QraphQL API.
+          GitHub GraphQL API.
         </Link>
       </span>
     ),
