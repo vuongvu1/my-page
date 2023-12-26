@@ -8,12 +8,17 @@ import javascript from "assets/images/javascript.webp";
 import typescript from "assets/images/typescript.webp";
 import docker from "assets/images/docker.webp";
 import graphql from "assets/images/graphql.webp";
+import html from "assets/images/html.webp";
+import css from "assets/images/css.webp";
+import storybook from "assets/images/storybook.webp";
 
 const skills = [
   {
     title: "Languages",
     items: [
       { logo: javascript, name: "JavaScript" },
+      { logo: html, name: "HTML" },
+      { logo: css, name: "CSS" },
       { logo: typescript, name: "TypeScript" },
     ],
   },
@@ -25,6 +30,7 @@ const skills = [
       { logo: reactnative, name: "React Native" },
       { logo: graphql, name: "GraphQL" },
       { logo: nodejs, name: "Nodejs" },
+      { logo: storybook, name: "Storybook" },
     ],
   },
   {
