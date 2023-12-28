@@ -1,7 +1,6 @@
 import { FC, PropsWithChildren, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { Close as CloseIcon } from "assets/icons";
-import { useScreen } from "utils/hooks";
 import SC from "./styles";
 
 const modalRoot = document.getElementById("modal");
@@ -9,30 +8,42 @@ const bodyElement = document.getElementsByTagName("body")[0];
 
 type Props = {
   visible: boolean;
-  close: () => void;
+  onClose: () => void;
 };
 
-const Modal: FC<PropsWithChildren<Props>> = ({ visible, close, children }) => {
-  const { isLarge } = useScreen();
-
+const Modal: FC<PropsWithChildren<Props>> = ({
+  visible,
+  onClose,
+  children,
+}) => {
   useEffect(() => {
     if (visible) {
       bodyElement.style.overflow = "hidden";
-      bodyElement.style.paddingRight = isLarge ? "16px" : "0";
     } else {
       bodyElement.style.overflow = "auto";
-      bodyElement.style.paddingRight = "0";
     }
-  }, [visible, isLarge]);
+  }, [visible]);
+
+  useEffect(() => {
+    const handleKeyPress = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyPress);
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [onClose]);
 
   if (!visible || !modalRoot) return null;
 
   return createPortal(
     <SC.Background>
       <SC.Wrapper>
-        <SC.CloseWrapper onClick={close}>
+        <SC.CloseIconWrapper onClick={onClose}>
           <CloseIcon fill="white" />
-        </SC.CloseWrapper>
+        </SC.CloseIconWrapper>
         {children}
       </SC.Wrapper>
     </SC.Background>,

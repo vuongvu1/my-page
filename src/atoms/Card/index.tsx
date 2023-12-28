@@ -59,7 +59,7 @@ const Image: FC<PropsWithChildren<Props>> = ({
         <Text type="body">{children}</Text>
       </SC.Content>
       {modalContent && (
-        <Modal visible={modalVisible} close={closeModal}>
+        <Modal visible={modalVisible} onClose={closeModal}>
           <Slider content={modalContent} />
         </Modal>
       )}

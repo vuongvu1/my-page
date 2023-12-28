@@ -26,7 +26,7 @@ const SC = {
       background-color: transparent;
     `,
   ),
-  CloseWrapper: styled.div`
+  CloseIconWrapper: styled.div`
     position: absolute;
     top: -20px;
     right: -20px;
