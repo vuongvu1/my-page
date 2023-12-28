@@ -29,7 +29,10 @@ const Image: FC<PropsWithChildren<Props>> = ({
   const [modalVisible, setModalVisible] = useState(false);
   const { palette } = useTheme();
 
-  const openModal = () => setModalVisible(true);
+  const openModal = (e: MouseEvent) => {
+    e.preventDefault();
+    setModalVisible(true);
+  };
   const closeModal = () => setModalVisible(false);
 
   return (
@@ -39,7 +42,7 @@ const Image: FC<PropsWithChildren<Props>> = ({
         <Text type="h3">
           <Link
             onClick={!url ? openModal : undefined}
-            href={url}
+            href={url || ""}
             target="_blank"
             color={palette.primary.main}
           >

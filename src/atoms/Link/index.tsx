@@ -1,11 +1,11 @@
-import { FC, PropsWithChildren } from "react";
+import { FC, PropsWithChildren, MouseEventHandler } from "react";
 import SC from "./styles";
 
 type Props = {
   href?: string;
   color?: string;
   target?: string;
-  onClick?: () => void;
+  onClick?: MouseEventHandler<HTMLAnchorElement> | undefined;
 };
 
 const Link: FC<PropsWithChildren<Props>> = ({

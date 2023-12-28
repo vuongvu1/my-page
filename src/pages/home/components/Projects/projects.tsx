@@ -29,7 +29,7 @@ const projects = [
   {
     imgSrc: passgowhere,
     title: "PassGoWhere",
-    url: "https://pass.gowhere.gov.sg/",
+    url: "https://exitpass.mom.gov.sg/",
     techStack: ["React", "TypeScript", "Tailwind"],
     desc: "A web application that allows Singapore foreign workers to apply for an Exit Pass to go outside of their dormitories with some specific timeslots, in order to control the spread of COVID-19.",
   },
