@@ -35,15 +35,17 @@ const About = () => {
             </Text>
             <Text type="body" color={palette.primary.main}>
               My name is Vuong Vu, a {currentYear - 1994}-year-old Frontend
-              Developer from Vietnam, currently living in Berlin, Germany.
+              Engineer from Vietnam, currently living in Berlin, Germany. I have
+              more than {currentYear - 2018} years of professional experience,
+              with {currentYear - 2019} years of expertise in React.
             </Text>
             <Text type="body" color={palette.primary.main}>
-              I have {currentYear - 2017} years of working professionally, of
-              which {currentYear - 2019} years experience with React.
+              I love programming and am passionate about building applications
+              that help improve people's lives.
             </Text>
             <Text type="body" color={palette.primary.main}>
-              I love programming and passionate about building applications that
-              help improve people's lives.
+              I also enjoy hiking, playing the piano, and finding joy in life's
+              smallest moments.
             </Text>
           </SC.Info>
         </SC.Column>

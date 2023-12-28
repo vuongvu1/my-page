@@ -11,7 +11,7 @@ const timeline = [
         <Link href="https://www.deliveryhero.com/" target="_blank">
           Delivery Hero
         </Link>{" "}
-        as a frontend developer and moved to Berlin, Germany.
+        as a Frontend Engineer and moved to Berlin, Germany.
       </>
     ),
   },
@@ -23,9 +23,7 @@ const timeline = [
         <Link href="https://www.2359.co/" target="_blank">
           2359 Media
         </Link>{" "}
-        as a frontend developer and moved to Singapore. Used React as the main
-        tool along with Typescript, Redux. Adapt working style with
-        international colleagues.
+        as a Frontend Engineer and moved to Singapore.
       </>
     ),
   },
@@ -37,8 +35,7 @@ const timeline = [
         <Link href="https://www.codelink.io/" target="_blank">
           CodeLink
         </Link>{" "}
-        as a frontend developer. Worked mostly with React and Redux to build and
-        maintain products for European customers.
+        as a Frontend Engineer.
       </>
     ),
   },
@@ -50,8 +47,7 @@ const timeline = [
         <Link href="https://www.kms-technology.com/" target="_blank">
           KMS Technology
         </Link>{" "}
-        as a fresher engineer. Completed KMS Next fresher training program. Got
-        used to coding review, agile working process.
+        as a Fresher Software Engineer and completed KMS Next training program.
       </>
     ),
   },
