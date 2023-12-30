@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { Text } from "atoms";
 import { Cassette } from "./Cassette";
 import { MP3Player } from "./MP3Player";
+import { MusicNotes } from "./MusicNotes";
 import { Container } from "./styles";
 
 export default function App() {
@@ -42,6 +43,7 @@ export default function App() {
       <Text type="body">Press [Space] to Play/Pause</Text>
       <MP3Player setIsPlaying={setIsPlaying} />
       <Cassette isPlaying={isPlaying} />
+      <MusicNotes isPlaying={isPlaying} />
     </Container>
   );
 }

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  position: relative;
+`;
 
 export const RadioWrapper = styled.div`
   .cassette__block {
@@ -293,5 +295,73 @@ export const RadioWrapper = styled.div`
   .hole4 {
     bottom: 30px;
     left: 160px;
+  }
+`;
+
+export const MusicNotesWrapper = styled.div`
+  position: absolute;
+  inset: 0;
+
+  .music-notes-wrapper {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 50%;
+    min-width: 300px;
+    height: 200px;
+    border: 0px solid #000;
+  }
+
+  .note-1,
+  .note-2,
+  .note-3,
+  .note-4 {
+    position: absolute;
+    animation: notes 2s infinite linear;
+    font-size: 35px;
+    opacity: 0;
+  }
+
+  .note-1 {
+    top: 60px;
+    left: 0;
+    animation-delay: 0.5s;
+  }
+
+  .note-2 {
+    top: 30px;
+    left: 30%;
+    animation-delay: 1s;
+  }
+
+  .note-3 {
+    top: 90px;
+    left: 60%;
+    animation-delay: 1.5s;
+  }
+
+  .note-4 {
+    top: 40px;
+    left: 90%;
+    animation-delay: 2s;
+  }
+
+  @keyframes notes {
+    0% {
+      transform: scale(1) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.5) translate(50%, -50%);
+    }
+    80% {
+      opacity: 0;
+      transform: scale(1.5) translate(100%, -100%);
+    }
+    100% {
+      transform: scale(1.5) translate(100%, -100%);
+      opacity: 0;
+    }
   }
 `;
