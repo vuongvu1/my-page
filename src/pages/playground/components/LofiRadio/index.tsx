@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { Text } from "atoms";
 import { Cassette } from "./Cassette";
-import { YouTubePlayer } from "./YouTubePlayer";
+import { MP3Player } from "./MP3Player";
 import { Container } from "./styles";
 
 export default function App() {
@@ -40,11 +40,7 @@ export default function App() {
   return (
     <Container>
       <Text type="body">Press [Space] to Play/Pause</Text>
-      <YouTubePlayer
-        videoId="jfKfPfyJRdk"
-        isPlaying={isPlaying}
-        setIsPlaying={setIsPlaying}
-      />
+      <MP3Player setIsPlaying={setIsPlaying} />
       <Cassette isPlaying={isPlaying} />
     </Container>
   );
