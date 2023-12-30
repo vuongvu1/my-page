@@ -5,8 +5,14 @@ import SnakeGame from "./components/SnakeGame";
 import DrawBoard from "./components/DrawBoard";
 import QuizGame from "./components/QuizGame";
 import ParallaxEffect from "./components/ParallaxEffect";
+import LofiRadio from "./components/LofiRadio";
 
 const tabsData: Array<TabProps> = [
+  {
+    name: "Lofi Radio",
+    key: "lofi-radio",
+    component: LofiRadio,
+  },
   {
     name: "Digital Clock",
     key: "digital-clock",
