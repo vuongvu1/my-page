@@ -38,7 +38,7 @@ const projects = [
     title: "Wiretap for Chrome",
     url: "https://blog.wiretap.co/",
     techStack: ["React", "Redux", "Node.js"],
-    desc: "A Chrome extension that lets users comment, share, socialize... while using Netflix.",
+    desc: "A Chrome extension that lets users comment, share, and socialize while using Netflix.",
   },
   {
     imgSrc: reacteasylocalization,
@@ -46,7 +46,7 @@ const projects = [
     url: "https://www.npmjs.com/package/react-easy-localization",
     techStack: ["JavaScript", "Babel"],
     githubUrl: "https://github.com/vuongvu1/react-easy-localization",
-    desc: "A simple Node module that helps React applications to implement language internalization easily.",
+    desc: "A simple Node module that helps React applications implement language internationalization easily.",
   },
   {
     imgSrc: til,
@@ -54,7 +54,7 @@ const projects = [
     url: "https://til.vuongvu.xyz/",
     techStack: ["React", "Gatsby"],
     githubUrl: "https://github.com/vuongvu1/today-i-learned",
-    desc: "A place I share what I've learned, to keep notes, and look up to when necessary.",
+    desc: "A place where I share what I've learned, keep notes, and refer to when necessary.",
   },
   {
     imgSrc: reactPopoverLite,
@@ -62,7 +62,7 @@ const projects = [
     url: "https://www.npmjs.com/package/react-popover-lite",
     techStack: ["React", "TypeScript"],
     githubUrl: "https://github.com/vuongvu1/react-popover-lite",
-    desc: "A simple popover React higher-order component with zero dependencies, TypeScript support.",
+    desc: "A simple popover React higher-order component with zero dependencies and TypeScript support.",
   },
   {
     imgSrc: gie,
