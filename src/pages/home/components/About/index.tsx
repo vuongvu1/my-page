@@ -34,7 +34,7 @@ const About = () => {
               About Me
             </Text>
             <Text type="body" color={palette.primary.main}>
-              My name is Vuong Vu, a {currentYear - 1994}-year-old Frontend
+              My name is Vuong Vu, a Frontend
               Engineer from Vietnam, currently living in Berlin, Germany. I have
               more than {currentYear - 2018} years of professional experience,
               with {currentYear - 2019} years of expertise in React.
