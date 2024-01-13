@@ -1,5 +1,5 @@
 import { useTheme } from "styled-components";
-import { Section, Text, Card } from "atoms";
+import { Section, Text, Card, Toastify } from "atoms";
 import projects from "./projects";
 import SC from "./styles";
 
@@ -9,14 +9,16 @@ const Projects = () => {
   return (
     <Section id="projects-section">
       <SC.Wrapper>
-        <Text type="h1" color={palette.primary.contrastText}>
-          Some Projects
-        </Text>
+        <Toastify>
+          <Text type="h1" color={palette.primary.contrastText}>
+            Some Projects
+          </Text>
+        </Toastify>
         <SC.Body>
-          {projects.map((project) => (
-            <Card key={project.title} {...project}>
-              {project.desc}
-            </Card>
+          {projects.map((project, index) => (
+            <Toastify key={project.title} delay={`${(index + 1) * 100}ms`}>
+              <Card {...project}>{project.desc}</Card>
+            </Toastify>
           ))}
         </SC.Body>
       </SC.Wrapper>

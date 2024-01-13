@@ -1,5 +1,5 @@
 import { useTheme } from "styled-components";
-import { Section, Text, ProgressSegment, Link } from "atoms";
+import { Section, Text, ProgressSegment, Link, Toastify } from "atoms";
 import SC from "./styles";
 
 const timeline = [
@@ -71,19 +71,26 @@ const Timeline = () => {
   return (
     <Section id="timeline-section">
       <SC.Wrapper>
-        <Text type="h1" color={palette.primary.contrastText}>
-          Timeline
-        </Text>
+        <Toastify>
+          <Text type="h1" color={palette.primary.contrastText}>
+            Timeline
+          </Text>
+        </Toastify>
         <SC.Body>
           {timeline.map((event, index) => (
-            <ProgressSegment
+            <Toastify
               key={event.title}
-              isLast={index === 0}
-              isFirst={index === timeline.length - 1}
-              index={timeline.length - index}
-              title={event.title}
-              description={event.description}
-            />
+              delay={`${(index + 1) * 100}ms`}
+              style={{ width: "100%" }}
+            >
+              <ProgressSegment
+                isLast={index === 0}
+                isFirst={index === timeline.length - 1}
+                index={timeline.length - index}
+                title={event.title}
+                description={event.description}
+              />
+            </Toastify>
           ))}
         </SC.Body>
       </SC.Wrapper>
