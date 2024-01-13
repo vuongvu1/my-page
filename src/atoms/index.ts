@@ -8,3 +8,4 @@ export { default as Link } from "./Link";
 export { default as Modal } from "./Modal";
 export { default as Slider } from "./Slider";
 export { default as YTIframe } from "./YTIframe";
+export { default as Toasty } from "./Toasty";

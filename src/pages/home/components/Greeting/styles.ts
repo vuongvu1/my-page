@@ -27,13 +27,13 @@ const SC = {
   Info: styled.div(
     ({ theme }) => css`
       padding: ${theme.spacing.md};
-      padding-top: 0;
+      padding-top: 2px;
       background: rgba(1, 68, 33, 0.8);
       text-shadow: 2px 2px ${theme.palette.primary.main};
       border-radius: ${theme.borderRadius};
     `,
   ),
-  NoWrap: styled.div`
+  NoWrap: styled.span`
     white-space: nowrap;
   `,
 };
