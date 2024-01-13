@@ -1,5 +1,5 @@
 import { useTheme } from "styled-components";
-import { Section, Text, Box, Toastify } from "atoms";
+import { Section, Text, Box } from "atoms";
 import background from "assets/images/background-2.webp";
 import skills from "./skills";
 import SC from "./styles";
@@ -11,17 +11,13 @@ const Skills = () => {
     <Section bgImage={background} id="skills-section">
       <SC.Wrapper>
         <SC.Title>
-          <Toastify>
-            <Text type="h1" color={palette.primary.contrastText}>
-              My Skills
-            </Text>
-          </Toastify>
+          <Text type="h1" color={palette.primary.contrastText}>
+            My Skills
+          </Text>
         </SC.Title>
         <SC.Body>
-          {skills.map((skill, index) => (
-            <Toastify key={skill.title} delay={`${(index + 1) * 100}ms`}>
-              <Box {...skill} />
-            </Toastify>
+          {skills.map((skill) => (
+            <Box key={skill.title} {...skill} />
           ))}
         </SC.Body>
       </SC.Wrapper>
