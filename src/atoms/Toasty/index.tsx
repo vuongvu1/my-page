@@ -10,15 +10,6 @@ function Toasty({ children, delay = "0", ...restProps }: Props) {
   const [isShown, setIsShown] = React.useState(false);
   const ref = React.useRef<HTMLDivElement>(null);
 
-  // const addObserve = React.useCallback((node: HTMLDivElement) => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     const [entry] = entries;
-
-  //     setIsShown(entry.isIntersecting);
-  //   });
-  //   observer.observe(node);
-  // }, []);
-
   React.useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const [entry] = entries;
@@ -41,6 +32,7 @@ function Toasty({ children, delay = "0", ...restProps }: Props) {
           opacity: isShown ? 1 : 0,
           transition: "opacity 800ms",
           transitionDelay: delay,
+          height: "inherit",
         }}
       >
         {children}

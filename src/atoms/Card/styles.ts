@@ -9,6 +9,7 @@ const SC = {
     ({ theme, bgColor }) => css`
       background-color: ${bgColor || theme.palette.common.light};
       border-radius: ${theme.borderRadius};
+      height: inherit;
       transition:
         transform ${theme.transitionTime},
         box-shadow ${theme.transitionTime};
