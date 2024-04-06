@@ -7,11 +7,20 @@ import reactPopoverLite from "assets/images/react-popover-lite.webp";
 import ea from "assets/images/ea.webp";
 import dls from "assets/images/dls.webp";
 import gie from "assets/images/github-issues-explorer.webp";
+import lnv from "assets/images/late-night-vibes.webp";
 import eaProjectDetail from "assets/images/ea";
 import dlsProjectDetail from "assets/images/dls";
 import gieProjectDetail from "assets/images/gie";
 
 const projects = [
+  {
+    imgSrc: lnv,
+    title: "Late Night Vibes",
+    url: "https://late-night-vibes.netlify.app/",
+    techStack: ["React", "TypeScript"],
+    githubUrl: "https://github.com/vuongvu1/late-night-vibes",
+    desc: "Enjoy a variety of live lofi radio channels through an exquisite online player.",
+  },
   {
     imgSrc: ea,
     title: "EA Creative Hub",
