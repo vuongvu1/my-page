@@ -16,7 +16,7 @@ const projects = [
   {
     imgSrc: lnv,
     title: "Late Night Vibes",
-    url: "https://late-night-vibes.netlify.app/",
+    url: "https://late-night-vibes.vuongvu.xyz/",
     techStack: ["React", "TypeScript"],
     githubUrl: "https://github.com/vuongvu1/late-night-vibes",
     desc: "Enjoy a variety of live lofi radio channels through an exquisite online player.",
