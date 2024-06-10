@@ -17,6 +17,15 @@ const Links = ({ onClick }: { onClick?: () => void }) => {
         </Link>
       </SC.Item>
       <SC.Item onClick={onClick}>
+        <a
+          href="https://late-night-vibes.vuongvu.xyz/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Text color={palette.primary.contrastText}>♪ ♫ ♬</Text>
+        </a>
+      </SC.Item>
+      <SC.Item onClick={onClick}>
         <a href="https://til.vuongvu.xyz/post" target="_blank" rel="noreferrer">
           <Text color={palette.primary.contrastText}>Today I Learned</Text>
         </a>
